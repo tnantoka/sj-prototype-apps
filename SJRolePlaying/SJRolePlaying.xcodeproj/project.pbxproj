@@ -27,6 +27,10 @@
 		9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */; };
 		9B7A1ECA181001B500F7460A /* Mosamosa-v1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1EC9181001B500F7460A /* Mosamosa-v1.1.ttf */; };
 		9B7A1ECD181009A400F7460A /* shop.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1ECC181009A400F7460A /* shop.csv */; };
+		9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED21814230300F7460A /* SJMapNode.m */; };
+		9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED718155B8700F7460A /* SJCharacterNode.m */; };
+		9B7A1EDB181563AC00F7460A /* SJUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1EDA181563AC00F7460A /* SJUtilities.m */; };
+		9B7A1EDF1815657700F7460A /* clotharmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1EDE1815657700F7460A /* clotharmor.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,14 @@
 		9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTilesheetScene.m; sourceTree = "<group>"; };
 		9B7A1EC9181001B500F7460A /* Mosamosa-v1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mosamosa-v1.1.ttf"; sourceTree = "<group>"; };
 		9B7A1ECC181009A400F7460A /* shop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shop.csv; sourceTree = "<group>"; };
+		9B7A1ED11814230300F7460A /* SJMapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMapNode.h; sourceTree = "<group>"; };
+		9B7A1ED21814230300F7460A /* SJMapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMapNode.m; sourceTree = "<group>"; };
+		9B7A1ED618155B8700F7460A /* SJCharacterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCharacterNode.h; sourceTree = "<group>"; };
+		9B7A1ED718155B8700F7460A /* SJCharacterNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCharacterNode.m; sourceTree = "<group>"; };
+		9B7A1ED9181563AC00F7460A /* SJUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJUtilities.h; sourceTree = "<group>"; };
+		9B7A1EDA181563AC00F7460A /* SJUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJUtilities.m; sourceTree = "<group>"; };
+		9B7A1EDD1815643400F7460A /* SJComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJComponents.h; sourceTree = "<group>"; };
+		9B7A1EDE1815657700F7460A /* clotharmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clotharmor.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,7 @@
 				9B7A1DE8180EB8F200F7460A /* Supporting Files */,
 				9B7A1E5B180EC01800F7460A /* Controllers */,
 				9B7A1E5D180EC03900F7460A /* Scenes */,
+				9B7A1ED0181422D500F7460A /* Components */,
 				9B7A1ECB1810098500F7460A /* Maps */,
 				9B7A1E5C180EC02C00F7460A /* Assets */,
 			);
@@ -186,6 +199,7 @@
 			children = (
 				9B7A1EC9181001B500F7460A /* Mosamosa-v1.1.ttf */,
 				9B7A1EC4180EEAA100F7460A /* tilesheet.png */,
+				9B7A1EDE1815657700F7460A /* clotharmor.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -207,6 +221,20 @@
 				9B7A1ECC181009A400F7460A /* shop.csv */,
 			);
 			name = Maps;
+			sourceTree = "<group>";
+		};
+		9B7A1ED0181422D500F7460A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A1EDD1815643400F7460A /* SJComponents.h */,
+				9B7A1ED9181563AC00F7460A /* SJUtilities.h */,
+				9B7A1EDA181563AC00F7460A /* SJUtilities.m */,
+				9B7A1ED11814230300F7460A /* SJMapNode.h */,
+				9B7A1ED21814230300F7460A /* SJMapNode.m */,
+				9B7A1ED618155B8700F7460A /* SJCharacterNode.h */,
+				9B7A1ED718155B8700F7460A /* SJCharacterNode.m */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +317,7 @@
 				9B7A1EC5180EEAA100F7460A /* tilesheet.png in Resources */,
 				9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */,
 				9B7A1DF4180EB8F200F7460A /* Images.xcassets in Resources */,
+				9B7A1EDF1815657700F7460A /* clotharmor.png in Resources */,
 				9B7A1ECD181009A400F7460A /* shop.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7A1E60180EC06300F7460A /* SJSceneViewController.m in Sources */,
+				9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */,
 				9B7A1E63180EC0C800F7460A /* SJShopScene.m in Sources */,
+				9B7A1EDB181563AC00F7460A /* SJUtilities.m in Sources */,
 				9B7A1DEE180EB8F200F7460A /* main.m in Sources */,
+				9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */,
 				9B7A1E12180EB91000F7460A /* SJViewController.m in Sources */,
 				9B7A1DF2180EB8F200F7460A /* SJAppDelegate.m in Sources */,
 				9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */,

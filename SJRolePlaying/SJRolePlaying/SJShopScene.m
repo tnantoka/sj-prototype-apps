@@ -8,8 +8,7 @@
 
 #import "SJShopScene.h"
 
-static const CGFloat TILE_SIZE = 32.0f;
-static const CGFloat MAP_COLS = 20.0f;
+#import "SJComponents.h"
 
 @implementation SJShopScene {
     BOOL _contentCreated;
@@ -23,51 +22,25 @@ static const CGFloat MAP_COLS = 20.0f;
 }
 
 - (void)createSceneContents {
+    SJMapNode *map = [[SJMapNode alloc] initWithMapNamed:@"shop"];
+    [self addChild:map];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    NSLog(@"frame: %@", NSStringFromCGRect(self.frame));
-
-    NSString *shop = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"shop" ofType:@"csv"]  encoding:NSUTF8StringEncoding error:nil];
-    NSLog(@"shop: %@", shop);
+    UITouch *touch = [touches anyObject];
+    CGPoint locaiton = [touch locationInNode:[self mapNode]];
     
-    SKTexture *tilesheet = [SKTexture textureWithImageNamed:@"tilesheet"];
-    
-    NSArray *layers = [shop componentsSeparatedByString:@"\n\n"];
-    
-    for (NSString *layer in layers) {
+    SJCharacterNode *playerNode = [self playerNode];
+    [playerNode moveTo:locaiton];
+}
 
-        NSArray *rows = [[[layer componentsSeparatedByString:@"\n"] reverseObjectEnumerator] allObjects];
-        for (int i = 0; i < rows.count; i++) {
-            NSString *row = rows[i];
-            NSArray *cols = [row componentsSeparatedByString:@","];
-            for (int j = 0; j < cols.count; j++) {
-                
-                NSInteger col = [cols[j] integerValue];
-                
-                if (col > -1) {
-                    CGFloat x = col % (NSInteger)MAP_COLS * TILE_SIZE / tilesheet.size.width;
-                    CGFloat y = col / (NSInteger)MAP_COLS * TILE_SIZE / tilesheet.size.height;
-                    CGFloat w = TILE_SIZE / tilesheet.size.width;
-                    CGFloat h = TILE_SIZE / tilesheet.size.height;
-                    
-                    CGRect rect = CGRectMake(x, y, w, h);
-                    SKTexture *tile = [SKTexture textureWithRect:rect inTexture:tilesheet];
+- (SKNode *)mapNode {
+    return [self childNodeWithName:kMapName];
+}
 
-                    SKSpriteNode *tileSprite = [SKSpriteNode spriteNodeWithTexture:tile];
-
-                    CGPoint position = CGPointMake(j * TILE_SIZE, i * TILE_SIZE);
-                    tileSprite.anchorPoint = CGPointMake(0, 0);
-                    tileSprite.position = position;
-
-                    [self addChild:tileSprite];
-                    
-                    NSLog(@"col: %d, rect: %@, position: %@", col, NSStringFromCGRect(rect), NSStringFromCGPoint(position));
-                }
-            }
-        }
-
-    }
-    
-
+- (SJCharacterNode *)playerNode {
+    return (SJCharacterNode *)[[self mapNode] childNodeWithName:kPlayerName];
 }
 
 @end
