@@ -1,599 +1,1558 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		9B19EB58181AA1530002A47D /* shop.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB57181AA1530002A47D /* shop.csv */; };
-		9B19EB5F181AA1A60002A47D /* chest.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5B181AA1A60002A47D /* chest.png */; };
-		9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5C181AA1A60002A47D /* clotharmor.png */; };
-		9B19EB61181AA1A60002A47D /* scientist.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5D181AA1A60002A47D /* scientist.png */; };
-		9B19EB62181AA1A60002A47D /* tilesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5E181AA1A60002A47D /* tilesheet.png */; };
-		9B19EB64181AA1C00002A47D /* Mosamosa-v1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */; };
-		9B19EB66181AA8BE0002A47D /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB65181AA8BE0002A47D /* characters.json */; };
-		9B7A1DE2180EB8F200F7460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE1180EB8F200F7460A /* Foundation.framework */; };
-		9B7A1DE4180EB8F200F7460A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */; };
-		9B7A1DE6180EB8F200F7460A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE5180EB8F200F7460A /* UIKit.framework */; };
-		9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1DEA180EB8F200F7460A /* InfoPlist.strings */; };
-		9B7A1DEE180EB8F200F7460A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1DED180EB8F200F7460A /* main.m */; };
-		9B7A1DF2180EB8F200F7460A /* SJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1DF1180EB8F200F7460A /* SJAppDelegate.m */; };
-		9B7A1DF4180EB8F200F7460A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1DF3180EB8F200F7460A /* Images.xcassets */; };
-		9B7A1DFB180EB8F300F7460A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DFA180EB8F300F7460A /* XCTest.framework */; };
-		9B7A1DFC180EB8F300F7460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE1180EB8F200F7460A /* Foundation.framework */; };
-		9B7A1DFD180EB8F300F7460A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE5180EB8F200F7460A /* UIKit.framework */; };
-		9B7A1E05180EB8F300F7460A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1E03180EB8F300F7460A /* InfoPlist.strings */; };
-		9B7A1E07180EB8F300F7460A /* SJRolePlayingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1E06180EB8F300F7460A /* SJRolePlayingTests.m */; };
-		9B7A1E12180EB91000F7460A /* SJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1E11180EB91000F7460A /* SJViewController.m */; };
-		9B7A1E14180EB98700F7460A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1E13180EB98700F7460A /* SpriteKit.framework */; };
-		9B7A1E60180EC06300F7460A /* SJSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1E5F180EC06300F7460A /* SJSceneViewController.m */; };
-		9B7A1E63180EC0C800F7460A /* SJShopScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1E62180EC0C800F7460A /* SJShopScene.m */; };
-		9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */; };
-		9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED21814230300F7460A /* SJMapNode.m */; };
-		9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED718155B8700F7460A /* SJCharacterNode.m */; };
-		9B7A1EDB181563AC00F7460A /* SJUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1EDA181563AC00F7460A /* SJUtilities.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9B7A1DFE180EB8F300F7460A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B7A1DD6180EB8F200F7460A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B7A1DDD180EB8F200F7460A;
-			remoteInfo = SJRolePlaying;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		9B19EB57181AA1530002A47D /* shop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shop.csv; sourceTree = "<group>"; };
-		9B19EB5B181AA1A60002A47D /* chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest.png; sourceTree = "<group>"; };
-		9B19EB5C181AA1A60002A47D /* clotharmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clotharmor.png; sourceTree = "<group>"; };
-		9B19EB5D181AA1A60002A47D /* scientist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scientist.png; sourceTree = "<group>"; };
-		9B19EB5E181AA1A60002A47D /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilesheet.png; sourceTree = "<group>"; };
-		9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mosamosa-v1.1.ttf"; sourceTree = "<group>"; };
-		9B19EB65181AA8BE0002A47D /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
-		9B7A1DDE180EB8F200F7460A /* SJRolePlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJRolePlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B7A1DE1180EB8F200F7460A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9B7A1DE5180EB8F200F7460A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9B7A1DE9180EB8F200F7460A /* SJRolePlaying-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SJRolePlaying-Info.plist"; sourceTree = "<group>"; };
-		9B7A1DEB180EB8F200F7460A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9B7A1DED180EB8F200F7460A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B7A1DEF180EB8F200F7460A /* SJRolePlaying-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SJRolePlaying-Prefix.pch"; sourceTree = "<group>"; };
-		9B7A1DF0180EB8F200F7460A /* SJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJAppDelegate.h; sourceTree = "<group>"; };
-		9B7A1DF1180EB8F200F7460A /* SJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJAppDelegate.m; sourceTree = "<group>"; };
-		9B7A1DF3180EB8F200F7460A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9B7A1DF9180EB8F300F7460A /* SJRolePlayingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJRolePlayingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B7A1DFA180EB8F300F7460A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9B7A1E02180EB8F300F7460A /* SJRolePlayingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SJRolePlayingTests-Info.plist"; sourceTree = "<group>"; };
-		9B7A1E04180EB8F300F7460A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9B7A1E06180EB8F300F7460A /* SJRolePlayingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJRolePlayingTests.m; sourceTree = "<group>"; };
-		9B7A1E10180EB91000F7460A /* SJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJViewController.h; sourceTree = "<group>"; };
-		9B7A1E11180EB91000F7460A /* SJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJViewController.m; sourceTree = "<group>"; };
-		9B7A1E13180EB98700F7460A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		9B7A1E5E180EC06300F7460A /* SJSceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSceneViewController.h; sourceTree = "<group>"; };
-		9B7A1E5F180EC06300F7460A /* SJSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSceneViewController.m; sourceTree = "<group>"; };
-		9B7A1E61180EC0C800F7460A /* SJShopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJShopScene.h; sourceTree = "<group>"; };
-		9B7A1E62180EC0C800F7460A /* SJShopScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJShopScene.m; sourceTree = "<group>"; };
-		9B7A1EC6180EECA100F7460A /* SJTilesheetScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTilesheetScene.h; sourceTree = "<group>"; };
-		9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTilesheetScene.m; sourceTree = "<group>"; };
-		9B7A1ED11814230300F7460A /* SJMapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMapNode.h; sourceTree = "<group>"; };
-		9B7A1ED21814230300F7460A /* SJMapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMapNode.m; sourceTree = "<group>"; };
-		9B7A1ED618155B8700F7460A /* SJCharacterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCharacterNode.h; sourceTree = "<group>"; };
-		9B7A1ED718155B8700F7460A /* SJCharacterNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCharacterNode.m; sourceTree = "<group>"; };
-		9B7A1ED9181563AC00F7460A /* SJUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJUtilities.h; sourceTree = "<group>"; };
-		9B7A1EDA181563AC00F7460A /* SJUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJUtilities.m; sourceTree = "<group>"; };
-		9B7A1EDD1815643400F7460A /* SJComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJComponents.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9B7A1DDB180EB8F200F7460A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B7A1E14180EB98700F7460A /* SpriteKit.framework in Frameworks */,
-				9B7A1DE4180EB8F200F7460A /* CoreGraphics.framework in Frameworks */,
-				9B7A1DE6180EB8F200F7460A /* UIKit.framework in Frameworks */,
-				9B7A1DE2180EB8F200F7460A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B7A1DF6180EB8F300F7460A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B7A1DFB180EB8F300F7460A /* XCTest.framework in Frameworks */,
-				9B7A1DFD180EB8F300F7460A /* UIKit.framework in Frameworks */,
-				9B7A1DFC180EB8F300F7460A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		9B19EB56181AA1180002A47D /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				9B19EB57181AA1530002A47D /* shop.csv */,
-			);
-			path = Maps;
-			sourceTree = "<group>";
-		};
-		9B19EB59181AA1A60002A47D /* BrowserQuest */ = {
-			isa = PBXGroup;
-			children = (
-				9B19EB5A181AA1A60002A47D /* img */,
-			);
-			path = BrowserQuest;
-			sourceTree = "<group>";
-		};
-		9B19EB5A181AA1A60002A47D /* img */ = {
-			isa = PBXGroup;
-			children = (
-				9B19EB5B181AA1A60002A47D /* chest.png */,
-				9B19EB5C181AA1A60002A47D /* clotharmor.png */,
-				9B19EB5D181AA1A60002A47D /* scientist.png */,
-				9B19EB5E181AA1A60002A47D /* tilesheet.png */,
-			);
-			path = img;
-			sourceTree = "<group>";
-		};
-		9B7A1DD5180EB8F200F7460A = {
-			isa = PBXGroup;
-			children = (
-				9B7A1DE7180EB8F200F7460A /* SJRolePlaying */,
-				9B7A1E00180EB8F300F7460A /* SJRolePlayingTests */,
-				9B7A1DE0180EB8F200F7460A /* Frameworks */,
-				9B7A1DDF180EB8F200F7460A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		9B7A1DDF180EB8F200F7460A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1DDE180EB8F200F7460A /* SJRolePlaying.app */,
-				9B7A1DF9180EB8F300F7460A /* SJRolePlayingTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9B7A1DE0180EB8F200F7460A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1E13180EB98700F7460A /* SpriteKit.framework */,
-				9B7A1DE1180EB8F200F7460A /* Foundation.framework */,
-				9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */,
-				9B7A1DE5180EB8F200F7460A /* UIKit.framework */,
-				9B7A1DFA180EB8F300F7460A /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9B7A1DE7180EB8F200F7460A /* SJRolePlaying */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1DF0180EB8F200F7460A /* SJAppDelegate.h */,
-				9B7A1DF1180EB8F200F7460A /* SJAppDelegate.m */,
-				9B7A1DF3180EB8F200F7460A /* Images.xcassets */,
-				9B7A1DE8180EB8F200F7460A /* Supporting Files */,
-				9B7A1E5B180EC01800F7460A /* Controllers */,
-				9B7A1E5D180EC03900F7460A /* Scenes */,
-				9B7A1ED0181422D500F7460A /* Components */,
-				9B7A1ECB1810098500F7460A /* Data */,
-				9B7A1E5C180EC02C00F7460A /* Assets */,
-			);
-			path = SJRolePlaying;
-			sourceTree = "<group>";
-		};
-		9B7A1DE8180EB8F200F7460A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1DE9180EB8F200F7460A /* SJRolePlaying-Info.plist */,
-				9B7A1DEA180EB8F200F7460A /* InfoPlist.strings */,
-				9B7A1DED180EB8F200F7460A /* main.m */,
-				9B7A1DEF180EB8F200F7460A /* SJRolePlaying-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9B7A1E00180EB8F300F7460A /* SJRolePlayingTests */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1E06180EB8F300F7460A /* SJRolePlayingTests.m */,
-				9B7A1E01180EB8F300F7460A /* Supporting Files */,
-			);
-			path = SJRolePlayingTests;
-			sourceTree = "<group>";
-		};
-		9B7A1E01180EB8F300F7460A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1E02180EB8F300F7460A /* SJRolePlayingTests-Info.plist */,
-				9B7A1E03180EB8F300F7460A /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9B7A1E5B180EC01800F7460A /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1E10180EB91000F7460A /* SJViewController.h */,
-				9B7A1E11180EB91000F7460A /* SJViewController.m */,
-				9B7A1E5E180EC06300F7460A /* SJSceneViewController.h */,
-				9B7A1E5F180EC06300F7460A /* SJSceneViewController.m */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		9B7A1E5C180EC02C00F7460A /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */,
-				9B19EB59181AA1A60002A47D /* BrowserQuest */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		9B7A1E5D180EC03900F7460A /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1EC6180EECA100F7460A /* SJTilesheetScene.h */,
-				9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */,
-				9B7A1E61180EC0C800F7460A /* SJShopScene.h */,
-				9B7A1E62180EC0C800F7460A /* SJShopScene.m */,
-			);
-			name = Scenes;
-			sourceTree = "<group>";
-		};
-		9B7A1ECB1810098500F7460A /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				9B19EB56181AA1180002A47D /* Maps */,
-				9B19EB65181AA8BE0002A47D /* characters.json */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		9B7A1ED0181422D500F7460A /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				9B7A1EDD1815643400F7460A /* SJComponents.h */,
-				9B7A1ED9181563AC00F7460A /* SJUtilities.h */,
-				9B7A1EDA181563AC00F7460A /* SJUtilities.m */,
-				9B7A1ED11814230300F7460A /* SJMapNode.h */,
-				9B7A1ED21814230300F7460A /* SJMapNode.m */,
-				9B7A1ED618155B8700F7460A /* SJCharacterNode.h */,
-				9B7A1ED718155B8700F7460A /* SJCharacterNode.m */,
-			);
-			name = Components;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		9B7A1DDD180EB8F200F7460A /* SJRolePlaying */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B7A1E0A180EB8F300F7460A /* Build configuration list for PBXNativeTarget "SJRolePlaying" */;
-			buildPhases = (
-				9B7A1DDA180EB8F200F7460A /* Sources */,
-				9B7A1DDB180EB8F200F7460A /* Frameworks */,
-				9B7A1DDC180EB8F200F7460A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SJRolePlaying;
-			productName = SJRolePlaying;
-			productReference = 9B7A1DDE180EB8F200F7460A /* SJRolePlaying.app */;
-			productType = "com.apple.product-type.application";
-		};
-		9B7A1DF8180EB8F300F7460A /* SJRolePlayingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B7A1E0D180EB8F300F7460A /* Build configuration list for PBXNativeTarget "SJRolePlayingTests" */;
-			buildPhases = (
-				9B7A1DF5180EB8F300F7460A /* Sources */,
-				9B7A1DF6180EB8F300F7460A /* Frameworks */,
-				9B7A1DF7180EB8F300F7460A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9B7A1DFF180EB8F300F7460A /* PBXTargetDependency */,
-			);
-			name = SJRolePlayingTests;
-			productName = SJRolePlayingTests;
-			productReference = 9B7A1DF9180EB8F300F7460A /* SJRolePlayingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		9B7A1DD6180EB8F200F7460A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = SJ;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = tnantoka;
-				TargetAttributes = {
-					9B7A1DF8180EB8F300F7460A = {
-						TestTargetID = 9B7A1DDD180EB8F200F7460A;
-					};
-				};
-			};
-			buildConfigurationList = 9B7A1DD9180EB8F200F7460A /* Build configuration list for PBXProject "SJRolePlaying" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 9B7A1DD5180EB8F200F7460A;
-			productRefGroup = 9B7A1DDF180EB8F200F7460A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				9B7A1DDD180EB8F200F7460A /* SJRolePlaying */,
-				9B7A1DF8180EB8F300F7460A /* SJRolePlayingTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		9B7A1DDC180EB8F200F7460A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B19EB61181AA1A60002A47D /* scientist.png in Resources */,
-				9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */,
-				9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */,
-				9B19EB66181AA8BE0002A47D /* characters.json in Resources */,
-				9B19EB64181AA1C00002A47D /* Mosamosa-v1.1.ttf in Resources */,
-				9B7A1DF4180EB8F200F7460A /* Images.xcassets in Resources */,
-				9B19EB58181AA1530002A47D /* shop.csv in Resources */,
-				9B19EB5F181AA1A60002A47D /* chest.png in Resources */,
-				9B19EB62181AA1A60002A47D /* tilesheet.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B7A1DF7180EB8F300F7460A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B7A1E05180EB8F300F7460A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		9B7A1DDA180EB8F200F7460A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B7A1E60180EC06300F7460A /* SJSceneViewController.m in Sources */,
-				9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */,
-				9B7A1E63180EC0C800F7460A /* SJShopScene.m in Sources */,
-				9B7A1EDB181563AC00F7460A /* SJUtilities.m in Sources */,
-				9B7A1DEE180EB8F200F7460A /* main.m in Sources */,
-				9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */,
-				9B7A1E12180EB91000F7460A /* SJViewController.m in Sources */,
-				9B7A1DF2180EB8F200F7460A /* SJAppDelegate.m in Sources */,
-				9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B7A1DF5180EB8F300F7460A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B7A1E07180EB8F300F7460A /* SJRolePlayingTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9B7A1DFF180EB8F300F7460A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9B7A1DDD180EB8F200F7460A /* SJRolePlaying */;
-			targetProxy = 9B7A1DFE180EB8F300F7460A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9B7A1DEA180EB8F200F7460A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B7A1DEB180EB8F200F7460A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9B7A1E03180EB8F300F7460A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B7A1E04180EB8F300F7460A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		9B7A1E08180EB8F300F7460A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		9B7A1E09180EB8F300F7460A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9B7A1E0B180EB8F300F7460A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SJRolePlaying/SJRolePlaying-Prefix.pch";
-				INFOPLIST_FILE = "SJRolePlaying/SJRolePlaying-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		9B7A1E0C180EB8F300F7460A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SJRolePlaying/SJRolePlaying-Prefix.pch";
-				INFOPLIST_FILE = "SJRolePlaying/SJRolePlaying-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		9B7A1E0E180EB8F300F7460A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SJRolePlaying.app/SJRolePlaying";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SJRolePlaying/SJRolePlaying-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SJRolePlayingTests/SJRolePlayingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		9B7A1E0F180EB8F300F7460A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SJRolePlaying.app/SJRolePlaying";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SJRolePlaying/SJRolePlaying-Prefix.pch";
-				INFOPLIST_FILE = "SJRolePlayingTests/SJRolePlayingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		9B7A1DD9180EB8F200F7460A /* Build configuration list for PBXProject "SJRolePlaying" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B7A1E08180EB8F300F7460A /* Debug */,
-				9B7A1E09180EB8F300F7460A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9B7A1E0A180EB8F300F7460A /* Build configuration list for PBXNativeTarget "SJRolePlaying" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B7A1E0B180EB8F300F7460A /* Debug */,
-				9B7A1E0C180EB8F300F7460A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9B7A1E0D180EB8F300F7460A /* Build configuration list for PBXNativeTarget "SJRolePlayingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B7A1E0E180EB8F300F7460A /* Debug */,
-				9B7A1E0F180EB8F300F7460A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 9B7A1DD6180EB8F200F7460A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1C393411E5BC4BF0B6B120A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79287A87A5E84473A5F0B196</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79287A87A5E84473A5F0B196</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9B19EB56181AA1180002A47D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B19EB57181AA1530002A47D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Maps</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB57181AA1530002A47D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>shop.csv</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB58181AA1530002A47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B19EB57181AA1530002A47D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B19EB59181AA1A60002A47D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B19EB5A181AA1A60002A47D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BrowserQuest</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB5A181AA1A60002A47D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B19EB5B181AA1A60002A47D</string>
+				<string>9B19EB5C181AA1A60002A47D</string>
+				<string>9B19EB5D181AA1A60002A47D</string>
+				<string>9B19EB5E181AA1A60002A47D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>img</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB5B181AA1A60002A47D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>chest.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB5C181AA1A60002A47D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>clotharmor.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB5D181AA1A60002A47D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>scientist.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB5E181AA1A60002A47D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>tilesheet.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB5F181AA1A60002A47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B19EB5B181AA1A60002A47D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B19EB60181AA1A60002A47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B19EB5C181AA1A60002A47D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B19EB61181AA1A60002A47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B19EB5D181AA1A60002A47D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B19EB62181AA1A60002A47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B19EB5E181AA1A60002A47D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B19EB63181AA1B20002A47D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>Mosamosa-v1.1.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB64181AA1C00002A47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B19EB63181AA1B20002A47D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B19EB65181AA8BE0002A47D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>characters.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B19EB66181AA8BE0002A47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B19EB65181AA8BE0002A47D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DD5180EB8F200F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1DE7180EB8F200F7460A</string>
+				<string>9B7A1E00180EB8F300F7460A</string>
+				<string>9B7A1DE0180EB8F200F7460A</string>
+				<string>9B7A1DDF180EB8F200F7460A</string>
+				<string>E648AD4679FD45ECA860A3BF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DD6180EB8F200F7460A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>SJ</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>tnantoka</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>9B7A1DF8180EB8F300F7460A</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>9B7A1DDD180EB8F200F7460A</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>9B7A1DD9180EB8F200F7460A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>9B7A1DD5180EB8F200F7460A</string>
+			<key>productRefGroup</key>
+			<string>9B7A1DDF180EB8F200F7460A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>9B7A1DDD180EB8F200F7460A</string>
+				<string>9B7A1DF8180EB8F300F7460A</string>
+			</array>
+		</dict>
+		<key>9B7A1DD9180EB8F200F7460A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9B7A1E08180EB8F300F7460A</string>
+				<string>9B7A1E09180EB8F300F7460A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9B7A1DDA180EB8F200F7460A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B7A1E60180EC06300F7460A</string>
+				<string>9B7A1ED31814230300F7460A</string>
+				<string>9B7A1E63180EC0C800F7460A</string>
+				<string>9B7A1EDB181563AC00F7460A</string>
+				<string>9B7A1DEE180EB8F200F7460A</string>
+				<string>9B7A1ED818155B8700F7460A</string>
+				<string>9B7A1E12180EB91000F7460A</string>
+				<string>9B7A1DF2180EB8F200F7460A</string>
+				<string>9B7A1EC8180EECA100F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B7A1DDB180EB8F200F7460A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B7A1E14180EB98700F7460A</string>
+				<string>9B7A1DE4180EB8F200F7460A</string>
+				<string>9B7A1DE6180EB8F200F7460A</string>
+				<string>9B7A1DE2180EB8F200F7460A</string>
+				<string>1C393411E5BC4BF0B6B120A6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B7A1DDC180EB8F200F7460A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B19EB61181AA1A60002A47D</string>
+				<string>9B19EB60181AA1A60002A47D</string>
+				<string>9B7A1DEC180EB8F200F7460A</string>
+				<string>9B19EB66181AA8BE0002A47D</string>
+				<string>9B19EB64181AA1C00002A47D</string>
+				<string>9B7A1DF4180EB8F200F7460A</string>
+				<string>9B19EB58181AA1530002A47D</string>
+				<string>9B19EB5F181AA1A60002A47D</string>
+				<string>9B19EB62181AA1A60002A47D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B7A1DDD180EB8F200F7460A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9B7A1E0A180EB8F300F7460A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F6446E966FBC4054BFBA5F4E</string>
+				<string>9B7A1DDA180EB8F200F7460A</string>
+				<string>9B7A1DDB180EB8F200F7460A</string>
+				<string>9B7A1DDC180EB8F200F7460A</string>
+				<string>D2CD60E5DF1B43C6818117DC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SJRolePlaying</string>
+			<key>productName</key>
+			<string>SJRolePlaying</string>
+			<key>productReference</key>
+			<string>9B7A1DDE180EB8F200F7460A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>9B7A1DDE180EB8F200F7460A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SJRolePlaying.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9B7A1DDF180EB8F200F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1DDE180EB8F200F7460A</string>
+				<string>9B7A1DF9180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DE0180EB8F200F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1E13180EB98700F7460A</string>
+				<string>9B7A1DE1180EB8F200F7460A</string>
+				<string>9B7A1DE3180EB8F200F7460A</string>
+				<string>9B7A1DE5180EB8F200F7460A</string>
+				<string>9B7A1DFA180EB8F300F7460A</string>
+				<string>79287A87A5E84473A5F0B196</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DE1180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9B7A1DE2180EB8F200F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DE1180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DE3180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9B7A1DE4180EB8F200F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DE3180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DE5180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9B7A1DE6180EB8F200F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DE5180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DE7180EB8F200F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1DF0180EB8F200F7460A</string>
+				<string>9B7A1DF1180EB8F200F7460A</string>
+				<string>9B7A1DF3180EB8F200F7460A</string>
+				<string>9B7A1DE8180EB8F200F7460A</string>
+				<string>9B7A1E5B180EC01800F7460A</string>
+				<string>9B7A1E5D180EC03900F7460A</string>
+				<string>9B7A1ED0181422D500F7460A</string>
+				<string>9B7A1ECB1810098500F7460A</string>
+				<string>9B7A1E5C180EC02C00F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SJRolePlaying</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DE8180EB8F200F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1DE9180EB8F200F7460A</string>
+				<string>9B7A1DEA180EB8F200F7460A</string>
+				<string>9B7A1DED180EB8F200F7460A</string>
+				<string>9B7A1DEF180EB8F200F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DE9180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>SJRolePlaying-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DEA180EB8F200F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1DEB180EB8F200F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DEB180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DEC180EB8F200F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DEA180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DED180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DEE180EB8F200F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DED180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DEF180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJRolePlaying-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DF0180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DF1180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DF2180EB8F200F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DF1180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DF3180EB8F200F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1DF4180EB8F200F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DF3180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DF5180EB8F300F7460A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B7A1E07180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B7A1DF6180EB8F300F7460A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B7A1DFB180EB8F300F7460A</string>
+				<string>9B7A1DFD180EB8F300F7460A</string>
+				<string>9B7A1DFC180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B7A1DF7180EB8F300F7460A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B7A1E05180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B7A1DF8180EB8F300F7460A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9B7A1E0D180EB8F300F7460A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9B7A1DF5180EB8F300F7460A</string>
+				<string>9B7A1DF6180EB8F300F7460A</string>
+				<string>9B7A1DF7180EB8F300F7460A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9B7A1DFF180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SJRolePlayingTests</string>
+			<key>productName</key>
+			<string>SJRolePlayingTests</string>
+			<key>productReference</key>
+			<string>9B7A1DF9180EB8F300F7460A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>9B7A1DF9180EB8F300F7460A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SJRolePlayingTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9B7A1DFA180EB8F300F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>9B7A1DFB180EB8F300F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DFA180EB8F300F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DFC180EB8F300F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DE1180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DFD180EB8F300F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1DE5180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1DFE180EB8F300F7460A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>9B7A1DD6180EB8F200F7460A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9B7A1DDD180EB8F200F7460A</string>
+			<key>remoteInfo</key>
+			<string>SJRolePlaying</string>
+		</dict>
+		<key>9B7A1DFF180EB8F300F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>9B7A1DDD180EB8F200F7460A</string>
+			<key>targetProxy</key>
+			<string>9B7A1DFE180EB8F300F7460A</string>
+		</dict>
+		<key>9B7A1E00180EB8F300F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1E06180EB8F300F7460A</string>
+				<string>9B7A1E01180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SJRolePlayingTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E01180EB8F300F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1E02180EB8F300F7460A</string>
+				<string>9B7A1E03180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E02180EB8F300F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>SJRolePlayingTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E03180EB8F300F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1E04180EB8F300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E04180EB8F300F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E05180EB8F300F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1E03180EB8F300F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1E06180EB8F300F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJRolePlayingTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E07180EB8F300F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1E06180EB8F300F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1E08180EB8F300F7460A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9B7A1E09180EB8F300F7460A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9B7A1E0A180EB8F300F7460A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9B7A1E0B180EB8F300F7460A</string>
+				<string>9B7A1E0C180EB8F300F7460A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9B7A1E0B180EB8F300F7460A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E648AD4679FD45ECA860A3BF</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SJRolePlaying/SJRolePlaying-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SJRolePlaying/SJRolePlaying-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9B7A1E0C180EB8F300F7460A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E648AD4679FD45ECA860A3BF</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SJRolePlaying/SJRolePlaying-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SJRolePlaying/SJRolePlaying-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9B7A1E0D180EB8F300F7460A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9B7A1E0E180EB8F300F7460A</string>
+				<string>9B7A1E0F180EB8F300F7460A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9B7A1E0E180EB8F300F7460A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/SJRolePlaying.app/SJRolePlaying</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SJRolePlaying/SJRolePlaying-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>SJRolePlayingTests/SJRolePlayingTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9B7A1E0F180EB8F300F7460A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/SJRolePlaying.app/SJRolePlaying</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SJRolePlaying/SJRolePlaying-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SJRolePlayingTests/SJRolePlayingTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9B7A1E10180EB91000F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E11180EB91000F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E12180EB91000F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1E11180EB91000F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1E13180EB98700F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SpriteKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/SpriteKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9B7A1E14180EB98700F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1E13180EB98700F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1E5B180EC01800F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1E10180EB91000F7460A</string>
+				<string>9B7A1E11180EB91000F7460A</string>
+				<string>9B7A1E5E180EC06300F7460A</string>
+				<string>9B7A1E5F180EC06300F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E5C180EC02C00F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B19EB63181AA1B20002A47D</string>
+				<string>9B19EB59181AA1A60002A47D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Assets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E5D180EC03900F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1EC6180EECA100F7460A</string>
+				<string>9B7A1EC7180EECA100F7460A</string>
+				<string>9B7A1E61180EC0C800F7460A</string>
+				<string>9B7A1E62180EC0C800F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Scenes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E5E180EC06300F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJSceneViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E5F180EC06300F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJSceneViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E60180EC06300F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1E5F180EC06300F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1E61180EC0C800F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJShopScene.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E62180EC0C800F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJShopScene.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1E63180EC0C800F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1E62180EC0C800F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1EC6180EECA100F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJTilesheetScene.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1EC7180EECA100F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJTilesheetScene.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1EC8180EECA100F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1EC7180EECA100F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1ECB1810098500F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B19EB56181AA1180002A47D</string>
+				<string>9B19EB65181AA8BE0002A47D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Data</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1ED0181422D500F7460A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B7A1EDD1815643400F7460A</string>
+				<string>9B7A1ED9181563AC00F7460A</string>
+				<string>9B7A1EDA181563AC00F7460A</string>
+				<string>9B7A1ED11814230300F7460A</string>
+				<string>9B7A1ED21814230300F7460A</string>
+				<string>9B7A1ED618155B8700F7460A</string>
+				<string>9B7A1ED718155B8700F7460A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Components</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1ED11814230300F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJMapNode.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1ED21814230300F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJMapNode.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1ED31814230300F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1ED21814230300F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1ED618155B8700F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJCharacterNode.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1ED718155B8700F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJCharacterNode.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1ED818155B8700F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1ED718155B8700F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1ED9181563AC00F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJUtilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1EDA181563AC00F7460A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SJUtilities.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B7A1EDB181563AC00F7460A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B7A1EDA181563AC00F7460A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B7A1EDD1815643400F7460A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SJComponents.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2CD60E5DF1B43C6818117DC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E648AD4679FD45ECA860A3BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6446E966FBC4054BFBA5F4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>9B7A1DD6180EB8F200F7460A</string>
+</dict>
+</plist>

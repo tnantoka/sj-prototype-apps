@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EC7C558E-943D-401D-830D-58B446D45A02</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SJRolePlaying</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7770F372-5FCD-4269-B92C-811A2E7ED62A</key>
+		<string>ssh://github.com/tnantoka/sj-prototype-apps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SJRolePlaying/SJRolePlaying.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7770F372-5FCD-4269-B92C-811A2E7ED62A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tnantoka/sj-prototype-apps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7770F372-5FCD-4269-B92C-811A2E7ED62A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7770F372-5FCD-4269-B92C-811A2E7ED62A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sj-prototype-apps</string>
+		</dict>
+	</array>
+</dict>
+</plist>

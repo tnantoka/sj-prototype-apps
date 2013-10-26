@@ -10,6 +10,9 @@
 
 #import "SJComponents.h"
 
+#import "YMCPhysicsDebugger.h"
+#import "YMCSKNode+PhysicsDebug.h"
+
 static const CGFloat TILE_COLS = 20.0f;
 
 static NSString * const FILE_TYPE = @"csv";
@@ -34,7 +37,9 @@ NSString * const kPlayerName = @"c0";
 }
 
 - (void)createNodeContents {
-        
+    
+    [YMCPhysicsDebugger init];
+    
     SKTexture *tilesheetTexture = [SKTexture textureWithImageNamed:TILESHEET_NAME];
     NSString *mapData = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:_name ofType:FILE_TYPE]  encoding:NSUTF8StringEncoding error:nil];
     
@@ -96,6 +101,8 @@ NSString * const kPlayerName = @"c0";
         }
         
     }
+    
+    [self drawPhysicsBodies];
 }
 
 @end
