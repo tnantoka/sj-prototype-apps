@@ -22,7 +22,7 @@ typedef enum : uint8_t {
 
 @interface SJCharacterNode : SKSpriteNode
 
-+ (id)characterNode;
+- (id)initWithCharacterNamed:(NSString *)name;
 
 - (void)stop;
 - (void)walk;

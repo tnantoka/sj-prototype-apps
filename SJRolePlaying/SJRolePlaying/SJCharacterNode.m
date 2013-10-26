@@ -10,35 +10,34 @@
 
 #import "SJComponents.h"
 
-static const NSInteger STOP_ROW = 0;
-static const NSInteger STOP_COLS = 2;
+static NSString * const CHARACTERS_NAME = @"characters";
+static NSString * const FILE_TYPE = @"json";
 
-static const NSInteger WALK_ROW = 1;
-static const NSInteger WALK_COLS = 4;
-
-static const NSInteger UP_ROW = 3;
-static const NSInteger RIGHT_ROW = 6;
-static const NSInteger LEFT_ROW = 6;
-
-static const CGFloat SPEED = 0.3f;
-
-static NSString * const TILESHEET_NAME = @"clotharmor";
 static NSString * const MOVE_KEY = @"move";
-
-static const CGFloat TILE_SCALE = 0.5; // Map is 32x32 but character is 64x64.
 
 @implementation SJCharacterNode {
     SJCharacterState _state;
     SJCharacterDirection _direction;
+    NSDictionary *_character;
 }
 
-+ (id)characterNode {
-    SJCharacterNode *character = [SJCharacterNode spriteNodeWithColor:nil size:CGSizeMake(TILE_SIZE / TILE_SCALE, TILE_SIZE / TILE_SCALE)];
-    return character;
-}
+- (id)initWithCharacterNamed:(NSString *)name {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:CHARACTERS_NAME ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSError *error = nil;
+    NSDictionary *characters = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    if (error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }
+    NSMutableDictionary *character = [characters[@"default"] mutableCopy];
 
-- (id)initWithTexture:(SKTexture *)texture color:(UIColor *)color size:(CGSize)size {
-    if (self = [super initWithTexture:texture color:color size:size]) {
+    [character addEntriesFromDictionary:characters[name]];
+
+    CGFloat size = [character[@"size"] floatValue];
+    
+    if (self = [super initWithColor:nil size:CGSizeMake(size, size)]) {
+        _character = character;
         [self createNodeContents];
     }
     return self;
@@ -50,13 +49,23 @@ static const CGFloat TILE_SCALE = 0.5; // Map is 32x32 but character is 64x64.
 
 - (void)stop {
     if (_state & SJCharacterStateStop) return;
-    [self animateWithRow:STOP_ROW cols:STOP_COLS time:0.6f];
+    
+    NSInteger row = [_character[@"stop_row"] integerValue];
+    NSInteger cols = [_character[@"stop_cols"] integerValue];
+    CGFloat time = [_character[@"stop_time"] floatValue];
+    
+    [self animateWithRow:row cols:cols time:time];
     _state = SJCharacterStateStop;
 }
 
 - (void)walk {
     //if (_state & SJCharacterStateWalk) return;
-    [self animateWithRow:WALK_ROW cols:WALK_COLS time:0.2f];
+
+    NSInteger row = [_character[@"walk_row"] integerValue];
+    NSInteger cols = [_character[@"walk_cols"] integerValue];
+    CGFloat time = [_character[@"walk_time"] floatValue];
+
+    [self animateWithRow:row cols:cols time:time];
     _state = SJCharacterStateWalk;
 }
 
@@ -71,30 +80,36 @@ static const CGFloat TILE_SCALE = 0.5; // Map is 32x32 but character is 64x64.
 
 - (NSArray *)texturesWithRow:(int)row cols:(int)cols {
     
-    SKTexture *tilesheetTexture = [SKTexture textureWithImageNamed:TILESHEET_NAME];
+    SKTexture *tilesheetTexture = [SKTexture textureWithImageNamed:_character[@"name"]];
     
+    NSInteger upRow = [_character[@"up_row"] integerValue];
+    NSInteger rigthRow = [_character[@"right_row"] integerValue];
+    NSInteger leftRow = [_character[@"left_row"] integerValue];
+
     self.xScale = 1.0f;
     switch (_direction) {
         case SJCharacterDirectionUp:
-            row += UP_ROW;
+            row += upRow;
             break;
         case SJCharacterDirectionDown:
             break;
         case SJCharacterDirectionRight:
-            row += RIGHT_ROW;
+            row += rigthRow;
             break;
         case SJCharacterDirectionLeft:
-            row += LEFT_ROW;
+            row += leftRow;
             self.xScale = -1.0f;
             break;
     }
     
+    CGFloat scale = TILE_SIZE / [_character[@"size"] floatValue];
+
     NSMutableArray *textures = @[].mutableCopy;
     for (int col = 0; col < cols; col++) {
-        CGFloat x = col * TILE_SIZE / TILE_SCALE / tilesheetTexture.size.width;
-        CGFloat y = row * TILE_SIZE / TILE_SCALE / tilesheetTexture.size.height;
-        CGFloat w = TILE_SIZE / TILE_SCALE / tilesheetTexture.size.width;
-        CGFloat h = TILE_SIZE / TILE_SCALE / tilesheetTexture.size.height;
+        CGFloat x = col * TILE_SIZE / scale / tilesheetTexture.size.width;
+        CGFloat y = row * TILE_SIZE / scale / tilesheetTexture.size.height;
+        CGFloat w = TILE_SIZE / scale / tilesheetTexture.size.width;
+        CGFloat h = TILE_SIZE / scale / tilesheetTexture.size.height;
         
         CGRect rect = CGRectMake(x, y, w, h);
         
@@ -108,13 +123,17 @@ static const CGFloat TILE_SCALE = 0.5; // Map is 32x32 but character is 64x64.
 - (void)moveTo:(CGPoint)location {
     
     NSMutableArray *actions = @[].mutableCopy;
-    CGPoint diff = CGPointMake(floor((location.x - self.position.x) / TILE_SIZE), floor((location.y - self.position.y) / TILE_SIZE));
     
-    CGFloat x = diff.x * TILE_SIZE;
-    CGFloat y = diff.y * TILE_SIZE;
+    CGFloat diffX = round((location.x - self.position.x) / TILE_SIZE);
+    CGFloat diffY = round((location.y - self.position.y) / TILE_SIZE);
     
-    SKAction *moveX = [SKAction moveByX:x y:0 duration:abs(diff.x) * SPEED];
-    SKAction *moveY = [SKAction moveByX:0 y:y duration:abs(diff.y) * SPEED];
+    CGFloat x = diffX * TILE_SIZE;
+    CGFloat y = diffY * TILE_SIZE;
+        
+    CGFloat speed = [_character[@"speed"] floatValue];
+
+    SKAction *moveX = [SKAction moveByX:x y:0 duration:abs(diffX) * speed];
+    SKAction *moveY = [SKAction moveByX:0 y:y duration:abs(diffY) * speed];
     
     SKAction *walk = [SKAction runBlock:^{
         [self walk];
@@ -124,16 +143,16 @@ static const CGFloat TILE_SCALE = 0.5; // Map is 32x32 but character is 64x64.
     }];
     
     SKAction *turnX = [SKAction runBlock:^{
-        if (diff.x > 0) {
+        if (diffX > 0) {
             _direction = SJCharacterDirectionRight;
-        } else if (diff.x < 0){
+        } else if (diffX < 0){
             _direction = SJCharacterDirectionLeft;
         }
     }];
     SKAction *turnY = [SKAction runBlock:^{
-        if (diff.y > 0) {
+        if (diffY > 0) {
             _direction = SJCharacterDirectionUp;
-        } else if (diff.y < 0){
+        } else if (diffY < 0){
             _direction = SJCharacterDirectionDown;
         }
     }];

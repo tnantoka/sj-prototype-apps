@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B19EB58181AA1530002A47D /* shop.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB57181AA1530002A47D /* shop.csv */; };
+		9B19EB5F181AA1A60002A47D /* chest.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5B181AA1A60002A47D /* chest.png */; };
+		9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5C181AA1A60002A47D /* clotharmor.png */; };
+		9B19EB61181AA1A60002A47D /* scientist.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5D181AA1A60002A47D /* scientist.png */; };
+		9B19EB62181AA1A60002A47D /* tilesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5E181AA1A60002A47D /* tilesheet.png */; };
+		9B19EB64181AA1C00002A47D /* Mosamosa-v1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */; };
+		9B19EB66181AA8BE0002A47D /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB65181AA8BE0002A47D /* characters.json */; };
 		9B7A1DE2180EB8F200F7460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE1180EB8F200F7460A /* Foundation.framework */; };
 		9B7A1DE4180EB8F200F7460A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */; };
 		9B7A1DE6180EB8F200F7460A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE5180EB8F200F7460A /* UIKit.framework */; };
@@ -23,14 +30,10 @@
 		9B7A1E14180EB98700F7460A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1E13180EB98700F7460A /* SpriteKit.framework */; };
 		9B7A1E60180EC06300F7460A /* SJSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1E5F180EC06300F7460A /* SJSceneViewController.m */; };
 		9B7A1E63180EC0C800F7460A /* SJShopScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1E62180EC0C800F7460A /* SJShopScene.m */; };
-		9B7A1EC5180EEAA100F7460A /* tilesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1EC4180EEAA100F7460A /* tilesheet.png */; };
 		9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */; };
-		9B7A1ECA181001B500F7460A /* Mosamosa-v1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1EC9181001B500F7460A /* Mosamosa-v1.1.ttf */; };
-		9B7A1ECD181009A400F7460A /* shop.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1ECC181009A400F7460A /* shop.csv */; };
 		9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED21814230300F7460A /* SJMapNode.m */; };
 		9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED718155B8700F7460A /* SJCharacterNode.m */; };
 		9B7A1EDB181563AC00F7460A /* SJUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1EDA181563AC00F7460A /* SJUtilities.m */; };
-		9B7A1EDF1815657700F7460A /* clotharmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7A1EDE1815657700F7460A /* clotharmor.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B19EB57181AA1530002A47D /* shop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shop.csv; sourceTree = "<group>"; };
+		9B19EB5B181AA1A60002A47D /* chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest.png; sourceTree = "<group>"; };
+		9B19EB5C181AA1A60002A47D /* clotharmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clotharmor.png; sourceTree = "<group>"; };
+		9B19EB5D181AA1A60002A47D /* scientist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scientist.png; sourceTree = "<group>"; };
+		9B19EB5E181AA1A60002A47D /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilesheet.png; sourceTree = "<group>"; };
+		9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mosamosa-v1.1.ttf"; sourceTree = "<group>"; };
+		9B19EB65181AA8BE0002A47D /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
 		9B7A1DDE180EB8F200F7460A /* SJRolePlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJRolePlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7A1DE1180EB8F200F7460A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,11 +77,8 @@
 		9B7A1E5F180EC06300F7460A /* SJSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSceneViewController.m; sourceTree = "<group>"; };
 		9B7A1E61180EC0C800F7460A /* SJShopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJShopScene.h; sourceTree = "<group>"; };
 		9B7A1E62180EC0C800F7460A /* SJShopScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJShopScene.m; sourceTree = "<group>"; };
-		9B7A1EC4180EEAA100F7460A /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilesheet.png; sourceTree = "<group>"; };
 		9B7A1EC6180EECA100F7460A /* SJTilesheetScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTilesheetScene.h; sourceTree = "<group>"; };
 		9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTilesheetScene.m; sourceTree = "<group>"; };
-		9B7A1EC9181001B500F7460A /* Mosamosa-v1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mosamosa-v1.1.ttf"; sourceTree = "<group>"; };
-		9B7A1ECC181009A400F7460A /* shop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shop.csv; sourceTree = "<group>"; };
 		9B7A1ED11814230300F7460A /* SJMapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMapNode.h; sourceTree = "<group>"; };
 		9B7A1ED21814230300F7460A /* SJMapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMapNode.m; sourceTree = "<group>"; };
 		9B7A1ED618155B8700F7460A /* SJCharacterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCharacterNode.h; sourceTree = "<group>"; };
@@ -79,7 +86,6 @@
 		9B7A1ED9181563AC00F7460A /* SJUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJUtilities.h; sourceTree = "<group>"; };
 		9B7A1EDA181563AC00F7460A /* SJUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJUtilities.m; sourceTree = "<group>"; };
 		9B7A1EDD1815643400F7460A /* SJComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJComponents.h; sourceTree = "<group>"; };
-		9B7A1EDE1815657700F7460A /* clotharmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clotharmor.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B19EB56181AA1180002A47D /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				9B19EB57181AA1530002A47D /* shop.csv */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		9B19EB59181AA1A60002A47D /* BrowserQuest */ = {
+			isa = PBXGroup;
+			children = (
+				9B19EB5A181AA1A60002A47D /* img */,
+			);
+			path = BrowserQuest;
+			sourceTree = "<group>";
+		};
+		9B19EB5A181AA1A60002A47D /* img */ = {
+			isa = PBXGroup;
+			children = (
+				9B19EB5B181AA1A60002A47D /* chest.png */,
+				9B19EB5C181AA1A60002A47D /* clotharmor.png */,
+				9B19EB5D181AA1A60002A47D /* scientist.png */,
+				9B19EB5E181AA1A60002A47D /* tilesheet.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		9B7A1DD5180EB8F200F7460A = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +181,7 @@
 				9B7A1E5B180EC01800F7460A /* Controllers */,
 				9B7A1E5D180EC03900F7460A /* Scenes */,
 				9B7A1ED0181422D500F7460A /* Components */,
-				9B7A1ECB1810098500F7460A /* Maps */,
+				9B7A1ECB1810098500F7460A /* Data */,
 				9B7A1E5C180EC02C00F7460A /* Assets */,
 			);
 			path = SJRolePlaying;
@@ -197,11 +230,10 @@
 		9B7A1E5C180EC02C00F7460A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				9B7A1EC9181001B500F7460A /* Mosamosa-v1.1.ttf */,
-				9B7A1EC4180EEAA100F7460A /* tilesheet.png */,
-				9B7A1EDE1815657700F7460A /* clotharmor.png */,
+				9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */,
+				9B19EB59181AA1A60002A47D /* BrowserQuest */,
 			);
-			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		9B7A1E5D180EC03900F7460A /* Scenes */ = {
@@ -215,12 +247,13 @@
 			name = Scenes;
 			sourceTree = "<group>";
 		};
-		9B7A1ECB1810098500F7460A /* Maps */ = {
+		9B7A1ECB1810098500F7460A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				9B7A1ECC181009A400F7460A /* shop.csv */,
+				9B19EB56181AA1180002A47D /* Maps */,
+				9B19EB65181AA8BE0002A47D /* characters.json */,
 			);
-			name = Maps;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		9B7A1ED0181422D500F7460A /* Components */ = {
@@ -313,12 +346,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7A1ECA181001B500F7460A /* Mosamosa-v1.1.ttf in Resources */,
-				9B7A1EC5180EEAA100F7460A /* tilesheet.png in Resources */,
+				9B19EB61181AA1A60002A47D /* scientist.png in Resources */,
+				9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */,
 				9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */,
+				9B19EB66181AA8BE0002A47D /* characters.json in Resources */,
+				9B19EB64181AA1C00002A47D /* Mosamosa-v1.1.ttf in Resources */,
 				9B7A1DF4180EB8F200F7460A /* Images.xcassets in Resources */,
-				9B7A1EDF1815657700F7460A /* clotharmor.png in Resources */,
-				9B7A1ECD181009A400F7460A /* shop.csv in Resources */,
+				9B19EB58181AA1530002A47D /* shop.csv in Resources */,
+				9B19EB5F181AA1A60002A47D /* chest.png in Resources */,
+				9B19EB62181AA1A60002A47D /* tilesheet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +582,7 @@
 				9B7A1E0C180EB8F300F7460A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B7A1E0D180EB8F300F7460A /* Build configuration list for PBXNativeTarget "SJRolePlayingTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +591,7 @@
 				9B7A1E0F180EB8F300F7460A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,42 @@
+{
+    "default" : {
+        "stop_time" : 0.6,
+        "walk_time" : 0.3,
+        "speed": 0.2
+    },
+    "c0" : {
+        "name" : "clotharmor",
+        "stop_row" : 0,
+        "stop_cols" : 2,
+        "walk_row" : 1,
+        "walk_cols" : 4,
+        "up_row" : 3,
+        "right_row" : 6,
+        "left_row" : 6,
+        "size": 64
+    },
+    "c1" : {
+        "name" : "scientist",
+        "stop_row" : 0,
+        "stop_cols" : 2,
+        "walk_row" : 0,
+        "walk_cols" : 2,
+        "up_row" : 0,
+        "right_row" : 0,
+        "left_row" : 0,
+        "size": 48
+    },
+    "c2" : {
+        "name" : "chest",
+        "stop_row" : 0,
+        "stop_cols" : 1,
+        "walk_row" : 0,
+        "walk_cols" : 1,
+        "up_row" : 0,
+        "right_row" : 0,
+        "left_row" : 0,
+        "size": 32
+    }
+}
+ 
+

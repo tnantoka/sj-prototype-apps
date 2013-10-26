@@ -17,7 +17,7 @@ static NSString * const FILE_TYPE = @"csv";
 static NSString * const TILESHEET_NAME = @"tilesheet";
 
 NSString * const kMapName = @"map";
-NSString * const kPlayerName = @"player";
+NSString * const kPlayerName = @"c0";
 
 @implementation SJMapNode {
     NSString *_name;
@@ -42,9 +42,11 @@ NSString * const kPlayerName = @"player";
     
     for (NSString *layer in layers) {
         
-        NSArray *rows = [[[layer componentsSeparatedByString:@"\n"] reverseObjectEnumerator] allObjects];
+        NSString *trimmedLayer = [layer stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSArray *rows = [[[trimmedLayer componentsSeparatedByString:@"\n"] reverseObjectEnumerator] allObjects];
         for (int i = 0; i < rows.count; i++) {
             NSString *row = rows[i];
+            row = [row stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             NSArray *cols = [row componentsSeparatedByString:@","];
             for (int j = 0; j < cols.count; j++) {
                 
@@ -62,14 +64,15 @@ NSString * const kPlayerName = @"player";
                     tileSprite.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(TILE_SIZE, TILE_SIZE)];
                     tileSprite.physicsBody.dynamic = NO;
                     
-                } else if ([col isEqualToString:@"p"]) {
-                    tileSprite = [SJCharacterNode characterNode];
-                    tileSprite.name = kPlayerName;
+                } else if ([col hasPrefix:@"c"]) {
+                    tileSprite = [[SJCharacterNode alloc] initWithCharacterNamed:col];
 
                     tileSprite.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(TILE_SIZE, TILE_SIZE)];
                     tileSprite.physicsBody.affectedByGravity = NO;
                     tileSprite.physicsBody.allowsRotation = NO;
-                    
+
+                    tileSprite.name = col;
+
                 } else {
                     NSInteger index = [col integerValue];
                     
