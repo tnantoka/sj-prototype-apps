@@ -103,6 +103,7 @@ NSString * const kPlayerName = @"c0";
     }
     
     [self drawPhysicsBodies];
+
 }
 
 @end

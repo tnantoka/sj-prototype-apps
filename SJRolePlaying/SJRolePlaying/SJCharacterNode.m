@@ -157,13 +157,17 @@ static NSString * const MOVE_KEY = @"move";
         }
     }];
     
-    [actions addObject:turnX];
-    [actions addObject:walk];
-    [actions addObject:moveX];
+    if (x != 0) {
+        [actions addObject:turnX];
+        [actions addObject:walk];
+        [actions addObject:moveX];
+    }
 
-    [actions addObject:turnY];
-    [actions addObject:walk];
-    [actions addObject:moveY];
+    if (y != 0) {
+        [actions addObject:turnY];
+        [actions addObject:walk];
+        [actions addObject:moveY];
+    }
     
     [actions addObject:stop];
     
