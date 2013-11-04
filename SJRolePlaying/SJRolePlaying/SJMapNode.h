@@ -11,6 +11,9 @@
 extern NSString * const kMapName;
 extern NSString * const kPlayerName;
 
+extern const uint32_t playerCategory;
+extern const uint32_t characterCategory;
+
 @interface SJMapNode : SKNode
 
 - (id)initWithMapNamed:(NSString *)name;

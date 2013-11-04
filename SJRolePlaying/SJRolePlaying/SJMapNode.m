@@ -10,8 +10,10 @@
 
 #import "SJComponents.h"
 
+#ifdef DEBUG
 #import "YMCPhysicsDebugger.h"
 #import "YMCSKNode+PhysicsDebug.h"
+#endif
 
 static const CGFloat TILE_COLS = 20.0f;
 
@@ -21,6 +23,9 @@ static NSString * const TILESHEET_NAME = @"tilesheet";
 
 NSString * const kMapName = @"map";
 NSString * const kPlayerName = @"c0";
+
+const uint32_t playerCategory = 0x1 << 0;
+const uint32_t characterCategory = 0x1 << 1;
 
 @implementation SJMapNode {
     NSString *_name;
@@ -38,7 +43,9 @@ NSString * const kPlayerName = @"c0";
 
 - (void)createNodeContents {
     
+#ifdef DEBUG
     [YMCPhysicsDebugger init];
+#endif
     
     SKTexture *tilesheetTexture = [SKTexture textureWithImageNamed:TILESHEET_NAME];
     NSString *mapData = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:_name ofType:FILE_TYPE]  encoding:NSUTF8StringEncoding error:nil];
@@ -75,6 +82,15 @@ NSString * const kPlayerName = @"c0";
                     tileSprite.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(TILE_SIZE, TILE_SIZE)];
                     tileSprite.physicsBody.affectedByGravity = NO;
                     tileSprite.physicsBody.allowsRotation = NO;
+                    
+                    if ([col isEqualToString:kPlayerName]) {
+                        tileSprite.physicsBody.categoryBitMask = playerCategory;
+                        tileSprite.physicsBody.contactTestBitMask = characterCategory;
+                    } else {
+                        tileSprite.physicsBody.categoryBitMask = characterCategory;
+                        tileSprite.physicsBody.contactTestBitMask = playerCategory;
+                        tileSprite.physicsBody.dynamic = NO;
+                    }
 
                     tileSprite.name = col;
 
@@ -102,8 +118,10 @@ NSString * const kPlayerName = @"c0";
         
     }
     
-    [self drawPhysicsBodies];
-
+#ifdef DEBUG
+    //[self drawPhysicsBodies];
+#endif
+    
 }
 
 @end

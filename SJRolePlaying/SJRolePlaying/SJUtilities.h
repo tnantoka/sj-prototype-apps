@@ -10,6 +10,10 @@
 
 extern const CGFloat TILE_SIZE;
 
+extern NSString * const kLangKey;
+
 @interface SJUtilities : NSObject
+
++ (NSString *)lang;
 
 @end

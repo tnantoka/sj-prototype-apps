@@ -9,3 +9,4 @@
 #import "SJUtilities.h"
 #import "SJMapNode.h"
 #import "SJCharacterNode.h"
+#import "SJMessageNode.h"

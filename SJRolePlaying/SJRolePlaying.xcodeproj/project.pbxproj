@@ -15,6 +15,8 @@
 		9B19EB62181AA1A60002A47D /* tilesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5E181AA1A60002A47D /* tilesheet.png */; };
 		9B19EB64181AA1C00002A47D /* Mosamosa-v1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */; };
 		9B19EB66181AA8BE0002A47D /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB65181AA8BE0002A47D /* characters.json */; };
+		9B19EB6C1822936E0002A47D /* SJMessageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19EB6B1822936E0002A47D /* SJMessageNode.m */; };
+		9B19EB6E1825555D0002A47D /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB6D1825555D0002A47D /* event.json */; };
 		9B7A1DE2180EB8F200F7460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE1180EB8F200F7460A /* Foundation.framework */; };
 		9B7A1DE4180EB8F200F7460A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */; };
 		9B7A1DE6180EB8F200F7460A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE5180EB8F200F7460A /* UIKit.framework */; };
@@ -56,6 +58,9 @@
 		9B19EB5E181AA1A60002A47D /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilesheet.png; sourceTree = "<group>"; };
 		9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mosamosa-v1.1.ttf"; sourceTree = "<group>"; };
 		9B19EB65181AA8BE0002A47D /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
+		9B19EB6A1822936E0002A47D /* SJMessageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMessageNode.h; sourceTree = "<group>"; };
+		9B19EB6B1822936E0002A47D /* SJMessageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMessageNode.m; sourceTree = "<group>"; };
+		9B19EB6D1825555D0002A47D /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
 		9B7A1DDE180EB8F200F7460A /* SJRolePlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJRolePlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7A1DE1180EB8F200F7460A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -258,6 +263,7 @@
 			children = (
 				9B19EB56181AA1180002A47D /* Maps */,
 				9B19EB65181AA8BE0002A47D /* characters.json */,
+				9B19EB6D1825555D0002A47D /* event.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -272,6 +278,8 @@
 				9B7A1ED21814230300F7460A /* SJMapNode.m */,
 				9B7A1ED618155B8700F7460A /* SJCharacterNode.h */,
 				9B7A1ED718155B8700F7460A /* SJCharacterNode.m */,
+				9B19EB6A1822936E0002A47D /* SJMessageNode.h */,
+				9B19EB6B1822936E0002A47D /* SJMessageNode.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -354,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B19EB6E1825555D0002A47D /* event.json in Resources */,
 				9B19EB61181AA1A60002A47D /* scientist.png in Resources */,
 				9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */,
 				9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */,
@@ -422,6 +431,7 @@
 				9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */,
 				9B7A1E12180EB91000F7460A /* SJViewController.m in Sources */,
 				9B7A1DF2180EB8F200F7460A /* SJAppDelegate.m in Sources */,
+				9B19EB6C1822936E0002A47D /* SJMessageNode.m in Sources */,
 				9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
