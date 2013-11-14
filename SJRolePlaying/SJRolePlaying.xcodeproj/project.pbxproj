@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C393411E5BC4BF0B6B120A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79287A87A5E84473A5F0B196 /* libPods.a */; };
-		9B19EB58181AA1530002A47D /* shop.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB57181AA1530002A47D /* shop.csv */; };
+		9B19EB58181AA1530002A47D /* map_shop.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB57181AA1530002A47D /* map_shop.csv */; };
 		9B19EB5F181AA1A60002A47D /* chest.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5B181AA1A60002A47D /* chest.png */; };
 		9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5C181AA1A60002A47D /* clotharmor.png */; };
 		9B19EB61181AA1A60002A47D /* scientist.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB5D181AA1A60002A47D /* scientist.png */; };
@@ -16,7 +16,11 @@
 		9B19EB64181AA1C00002A47D /* Mosamosa-v1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB63181AA1B20002A47D /* Mosamosa-v1.1.ttf */; };
 		9B19EB66181AA8BE0002A47D /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB65181AA8BE0002A47D /* characters.json */; };
 		9B19EB6C1822936E0002A47D /* SJMessageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19EB6B1822936E0002A47D /* SJMessageNode.m */; };
-		9B19EB6E1825555D0002A47D /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB6D1825555D0002A47D /* event.json */; };
+		9B19EB74182A7D2B0002A47D /* story_opening.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B19EB73182A7D2B0002A47D /* story_opening.json */; };
+		9B19EB77182A7F280002A47D /* SJBaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19EB76182A7F280002A47D /* SJBaseScene.m */; };
+		9B19EB7A182A81200002A47D /* SJStoryScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19EB79182A81200002A47D /* SJStoryScene.m */; };
+		9B3F1FF51834FEF000B5720F /* SJTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF41834FEF000B5720F /* SJTitleScene.m */; };
+		9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF7183501C300B5720F /* SJTapNode.m */; };
 		9B7A1DE2180EB8F200F7460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE1180EB8F200F7460A /* Foundation.framework */; };
 		9B7A1DE4180EB8F200F7460A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */; };
 		9B7A1DE6180EB8F200F7460A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE5180EB8F200F7460A /* UIKit.framework */; };
@@ -51,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		79287A87A5E84473A5F0B196 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B19EB57181AA1530002A47D /* shop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shop.csv; sourceTree = "<group>"; };
+		9B19EB57181AA1530002A47D /* map_shop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_shop.csv; sourceTree = "<group>"; };
 		9B19EB5B181AA1A60002A47D /* chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest.png; sourceTree = "<group>"; };
 		9B19EB5C181AA1A60002A47D /* clotharmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clotharmor.png; sourceTree = "<group>"; };
 		9B19EB5D181AA1A60002A47D /* scientist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scientist.png; sourceTree = "<group>"; };
@@ -60,7 +64,15 @@
 		9B19EB65181AA8BE0002A47D /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
 		9B19EB6A1822936E0002A47D /* SJMessageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMessageNode.h; sourceTree = "<group>"; };
 		9B19EB6B1822936E0002A47D /* SJMessageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMessageNode.m; sourceTree = "<group>"; };
-		9B19EB6D1825555D0002A47D /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
+		9B19EB73182A7D2B0002A47D /* story_opening.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story_opening.json; sourceTree = "<group>"; };
+		9B19EB75182A7F280002A47D /* SJBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBaseScene.h; sourceTree = "<group>"; };
+		9B19EB76182A7F280002A47D /* SJBaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBaseScene.m; sourceTree = "<group>"; };
+		9B19EB78182A81200002A47D /* SJStoryScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStoryScene.h; sourceTree = "<group>"; };
+		9B19EB79182A81200002A47D /* SJStoryScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStoryScene.m; sourceTree = "<group>"; };
+		9B3F1FF31834FEF000B5720F /* SJTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTitleScene.h; sourceTree = "<group>"; };
+		9B3F1FF41834FEF000B5720F /* SJTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTitleScene.m; sourceTree = "<group>"; };
+		9B3F1FF6183501C300B5720F /* SJTapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTapNode.h; sourceTree = "<group>"; };
+		9B3F1FF7183501C300B5720F /* SJTapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTapNode.m; sourceTree = "<group>"; };
 		9B7A1DDE180EB8F200F7460A /* SJRolePlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJRolePlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7A1DE1180EB8F200F7460A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,7 +137,7 @@
 		9B19EB56181AA1180002A47D /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				9B19EB57181AA1530002A47D /* shop.csv */,
+				9B19EB57181AA1530002A47D /* map_shop.csv */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -147,6 +159,14 @@
 				9B19EB5E181AA1A60002A47D /* tilesheet.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		9B19EB72182A7CD10002A47D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9B19EB73182A7D2B0002A47D /* story_opening.json */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		9B7A1DD5180EB8F200F7460A = {
@@ -254,6 +274,12 @@
 				9B7A1EC7180EECA100F7460A /* SJTilesheetScene.m */,
 				9B7A1E61180EC0C800F7460A /* SJShopScene.h */,
 				9B7A1E62180EC0C800F7460A /* SJShopScene.m */,
+				9B19EB75182A7F280002A47D /* SJBaseScene.h */,
+				9B19EB76182A7F280002A47D /* SJBaseScene.m */,
+				9B19EB78182A81200002A47D /* SJStoryScene.h */,
+				9B19EB79182A81200002A47D /* SJStoryScene.m */,
+				9B3F1FF31834FEF000B5720F /* SJTitleScene.h */,
+				9B3F1FF41834FEF000B5720F /* SJTitleScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -261,9 +287,9 @@
 		9B7A1ECB1810098500F7460A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9B19EB72182A7CD10002A47D /* Scenes */,
 				9B19EB56181AA1180002A47D /* Maps */,
 				9B19EB65181AA8BE0002A47D /* characters.json */,
-				9B19EB6D1825555D0002A47D /* event.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -280,6 +306,8 @@
 				9B7A1ED718155B8700F7460A /* SJCharacterNode.m */,
 				9B19EB6A1822936E0002A47D /* SJMessageNode.h */,
 				9B19EB6B1822936E0002A47D /* SJMessageNode.m */,
+				9B3F1FF6183501C300B5720F /* SJTapNode.h */,
+				9B3F1FF7183501C300B5720F /* SJTapNode.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -362,14 +390,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B19EB6E1825555D0002A47D /* event.json in Resources */,
 				9B19EB61181AA1A60002A47D /* scientist.png in Resources */,
 				9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */,
 				9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */,
 				9B19EB66181AA8BE0002A47D /* characters.json in Resources */,
 				9B19EB64181AA1C00002A47D /* Mosamosa-v1.1.ttf in Resources */,
+				9B19EB74182A7D2B0002A47D /* story_opening.json in Resources */,
 				9B7A1DF4180EB8F200F7460A /* Images.xcassets in Resources */,
-				9B19EB58181AA1530002A47D /* shop.csv in Resources */,
+				9B19EB58181AA1530002A47D /* map_shop.csv in Resources */,
 				9B19EB5F181AA1A60002A47D /* chest.png in Resources */,
 				9B19EB62181AA1A60002A47D /* tilesheet.png in Resources */,
 			);
@@ -423,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3F1FF51834FEF000B5720F /* SJTitleScene.m in Sources */,
 				9B7A1E60180EC06300F7460A /* SJSceneViewController.m in Sources */,
 				9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */,
 				9B7A1E63180EC0C800F7460A /* SJShopScene.m in Sources */,
@@ -430,8 +459,11 @@
 				9B7A1DEE180EB8F200F7460A /* main.m in Sources */,
 				9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */,
 				9B7A1E12180EB91000F7460A /* SJViewController.m in Sources */,
+				9B19EB77182A7F280002A47D /* SJBaseScene.m in Sources */,
 				9B7A1DF2180EB8F200F7460A /* SJAppDelegate.m in Sources */,
+				9B19EB7A182A81200002A47D /* SJStoryScene.m in Sources */,
 				9B19EB6C1822936E0002A47D /* SJMessageNode.m in Sources */,
+				9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */,
 				9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

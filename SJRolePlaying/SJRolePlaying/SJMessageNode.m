@@ -71,7 +71,9 @@ NSString * const kMessageName = @"message";
         if (i == 0) {
             
         }
-    }    
+    }
+    
+    self.message = @" "; // For performance
 }
 
 - (void)setMessage:(NSString *)message {

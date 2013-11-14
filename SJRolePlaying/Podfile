@@ -1,4 +1,6 @@
 platform :ios, '7.0'
 
-pod 'PhysicsDebugger'
+#pod 'PhysicsDebugger'
+#pod 'PhysicsDebugger', path: '~/projects/physics_debugger/app/PhysicsDebugger'
+pod 'PhysicsDebugger', git: 'https://github.com/ymc-thzi/PhysicsDebugger.git'
 

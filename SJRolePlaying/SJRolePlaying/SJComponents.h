@@ -10,3 +10,4 @@
 #import "SJMapNode.h"
 #import "SJCharacterNode.h"
 #import "SJMessageNode.h"
+#import "SJTapNode.h"

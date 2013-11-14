@@ -27,7 +27,8 @@
         self.title = @"RPG Prototypes";
         _scenes = @[
                     @"Tilesheet",
-                    @"Shop"
+                    @"Shop",
+                    @"Title",
                     ];
     }
     return self;
