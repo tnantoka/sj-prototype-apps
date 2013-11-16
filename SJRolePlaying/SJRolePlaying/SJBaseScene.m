@@ -9,17 +9,23 @@
 #import "SJBaseScene.h"
 
 #import "SJStoryScene.h"
+#import "SJSettingsScene.h"
+#import "SJTitleScene.h"
+
+static const CGFloat SCENE_DURATION = 0.6f;
 
 @implementation SJBaseScene
 
 - (id)initWithSize:(CGSize)size name:(NSString *)name {
     if (self = [super initWithSize:size]) {
         NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
-        NSData *data = [NSData dataWithContentsOfFile:path];
-        NSError *error = nil;
-        self.sceneData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-        if (error) {
-            NSLog(@"%@", [error localizedDescription]);
+        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            NSData *data = [NSData dataWithContentsOfFile:path];
+            NSError *error = nil;
+            self.sceneData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+            if (error) {
+                NSLog(@"%@", [error localizedDescription]);
+            }
         }
     }
     return self;
@@ -40,8 +46,12 @@
     SKScene *scene;
     if ([name hasPrefix:@"story"]) {
         scene = [[SJStoryScene alloc] initWithSize:self.size name:name];
+    } else if ([name hasPrefix:@"settings"]) {
+        scene = [[SJSettingsScene alloc] initWithSize:self.size name:name];
+    } else if ([name hasPrefix:@"title"]) {
+        scene = [[SJTitleScene alloc] initWithSize:self.size name:name];
     }
-    SKTransition *transition = [SKTransition fadeWithDuration:0.6f];
+    SKTransition *transition = [SKTransition fadeWithDuration:SCENE_DURATION];
     [self.view presentScene:scene transition:transition];
 }
 

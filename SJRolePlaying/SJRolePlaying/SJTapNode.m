@@ -37,10 +37,16 @@ static const CGFloat BLEND_DISABLED = 0.9;
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     if (_disabled) return;
     
-    if (_target && [_target respondsToSelector:_action]) {
-        // PerformSelector may cause a leak because its selector is unknown
-        //[_target performSelector:_action];
-        [_target performSelector:_action withObject:nil afterDelay:0];
+    UITouch *touch = [touches anyObject];
+    CGPoint positionInScene = [touch locationInNode:self.scene];
+    SKNode *node = [self.scene nodeAtPoint:positionInScene];
+    
+    if ([node isEqual:self]) {
+        if (_target && [_target respondsToSelector:_action]) {
+            // PerformSelector may cause a leak because its selector is unknown
+            //[_target performSelector:_action withObject:_object];
+            [_target performSelector:_action withObject:_object afterDelay:0];
+        }
     }
 
     [self touchesCancelled:touches withEvent:event];

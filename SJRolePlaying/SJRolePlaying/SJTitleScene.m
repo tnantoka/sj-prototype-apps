@@ -30,7 +30,7 @@ static const CGFloat MARGIN = 10.0f;
     [self addChild:titleLabel2];
 
     // New game
-    SJTapNode *newNode = [SJTapNode labelNodeWithFontNamed:@""];
+    SJTapNode *newNode = [SJTapNode labelNodeWithFontNamed:FONT_NORMAL];
     newNode.text = NSLocalizedString(@"New Game", nil);
     newNode.fontSize = 20.0f;
     newNode.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 0.0f);
@@ -77,7 +77,7 @@ static const CGFloat MARGIN = 10.0f;
 }
 
 - (void)goSettings {
-    NSLog(@"Settings");
+    [self loadScene:@"settings"];
 }
 
 - (void)goCopyright {

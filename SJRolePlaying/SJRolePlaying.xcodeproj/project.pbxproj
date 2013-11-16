@@ -21,6 +21,7 @@
 		9B19EB7A182A81200002A47D /* SJStoryScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19EB79182A81200002A47D /* SJStoryScene.m */; };
 		9B3F1FF51834FEF000B5720F /* SJTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF41834FEF000B5720F /* SJTitleScene.m */; };
 		9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF7183501C300B5720F /* SJTapNode.m */; };
+		9B3F1FFB18364C7700B5720F /* SJSettingsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FFA18364C7700B5720F /* SJSettingsScene.m */; };
 		9B7A1DE2180EB8F200F7460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE1180EB8F200F7460A /* Foundation.framework */; };
 		9B7A1DE4180EB8F200F7460A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */; };
 		9B7A1DE6180EB8F200F7460A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A1DE5180EB8F200F7460A /* UIKit.framework */; };
@@ -73,6 +74,8 @@
 		9B3F1FF41834FEF000B5720F /* SJTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTitleScene.m; sourceTree = "<group>"; };
 		9B3F1FF6183501C300B5720F /* SJTapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTapNode.h; sourceTree = "<group>"; };
 		9B3F1FF7183501C300B5720F /* SJTapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTapNode.m; sourceTree = "<group>"; };
+		9B3F1FF918364C7700B5720F /* SJSettingsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSettingsScene.h; sourceTree = "<group>"; };
+		9B3F1FFA18364C7700B5720F /* SJSettingsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSettingsScene.m; sourceTree = "<group>"; };
 		9B7A1DDE180EB8F200F7460A /* SJRolePlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJRolePlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7A1DE1180EB8F200F7460A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B7A1DE3180EB8F200F7460A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -280,6 +283,8 @@
 				9B19EB79182A81200002A47D /* SJStoryScene.m */,
 				9B3F1FF31834FEF000B5720F /* SJTitleScene.h */,
 				9B3F1FF41834FEF000B5720F /* SJTitleScene.m */,
+				9B3F1FF918364C7700B5720F /* SJSettingsScene.h */,
+				9B3F1FFA18364C7700B5720F /* SJSettingsScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				9B19EB7A182A81200002A47D /* SJStoryScene.m in Sources */,
 				9B19EB6C1822936E0002A47D /* SJMessageNode.m in Sources */,
 				9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */,
+				9B3F1FFB18364C7700B5720F /* SJSettingsScene.m in Sources */,
 				9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

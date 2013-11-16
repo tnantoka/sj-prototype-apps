@@ -29,6 +29,7 @@
                     @"Tilesheet",
                     @"Shop",
                     @"Title",
+                    @"Settings",
                     ];
     }
     return self;

@@ -59,7 +59,9 @@
     //NSString *lang = [[NSLocale preferredLanguages][0] isEqualToString:@"ja"] ? @"ja" : @"en";
     NSString *lang = @"ja";
     defaults[kLangKey] = lang;
-    
+
+    defaults[kSoundKey] = @NO;
+
     [[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
 }
 

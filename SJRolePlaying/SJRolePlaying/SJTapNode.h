@@ -12,6 +12,7 @@
 
 @property (nonatomic, assign) id target;
 @property (nonatomic) SEL action;
+@property (nonatomic) id object;
 
 @property (nonatomic) BOOL disabled;
 

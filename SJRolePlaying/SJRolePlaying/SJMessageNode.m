@@ -8,6 +8,8 @@
 
 #import "SJMessageNode.h"
 
+#import "SJComponents.h"
+
 static const CGFloat MARGIN = 10.0f;
 static const CGFloat PADDING = 10.0f;
 static const CGFloat LINE_HEIGHT = 18.0f;
@@ -57,7 +59,7 @@ NSString * const kMessageName = @"message";
     _chars = floor((rect.size.width - PADDING * 2.0f) / FONT_SIZE);
     _labels = @[].mutableCopy;
     for (int i = 0; i < _lines; i++) {
-        SKLabelNode *labelNode = [SKLabelNode labelNodeWithFontNamed:@""];
+        SKLabelNode *labelNode = [SKLabelNode labelNodeWithFontNamed:FONT_NORMAL];
         labelNode.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
         labelNode.fontSize = FONT_SIZE;
         CGPoint position = CGPointMake(rect.origin.x + PADDING, rect.origin.y + PADDING + LINE_HEIGHT * i);
