@@ -39,13 +39,13 @@ NSString * const FONT_NORMAL = @"";
 
     NSString *message = [NSString stringWithFormat:@"%@\n%@", title, urlString];
     
-    UIAlertView *testView = [UIAlertView alertViewWithTitle:NSLocalizedString(@"Open in Safari?", nil) message:message];
-    [testView addButtonWithTitle:NSLocalizedString(@"OK", nil) handler:^{
+    UIAlertView *alertView = [UIAlertView alertViewWithTitle:NSLocalizedString(@"Open in Safari?", nil) message:message];
+    [alertView addButtonWithTitle:NSLocalizedString(@"OK", nil) handler:^{
         NSURL *url = [NSURL URLWithString:urlString];
         [[UIApplication sharedApplication] openURL:url];
     }];
-    [testView addButtonWithTitle:NSLocalizedString(@"Cancel", nil) handler:nil];
-    [testView show];
+    [alertView addButtonWithTitle:NSLocalizedString(@"Cancel", nil) handler:nil];
+    [alertView show];
 }
 
 @end

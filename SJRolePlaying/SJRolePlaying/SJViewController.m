@@ -30,6 +30,7 @@
                     @"Shop",
                     @"Title",
                     @"Settings",
+                    @"Confirm",
                     ];
     }
     return self;

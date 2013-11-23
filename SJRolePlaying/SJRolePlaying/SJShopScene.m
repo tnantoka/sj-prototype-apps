@@ -8,16 +8,7 @@
 
 #import "SJShopScene.h"
 
-@implementation SJShopScene {
-    BOOL _contentCreated;
-}
-
-- (void)didMoveToView:(SKView *)view {
-    if (!_contentCreated) {
-        [self createSceneContents];
-        _contentCreated = YES;
-    }
-}
+@implementation SJShopScene
 
 - (void)createSceneContents {
     [self loadScene:@"story_opening"];

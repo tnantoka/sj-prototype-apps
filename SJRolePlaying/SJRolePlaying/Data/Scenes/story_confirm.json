@@ -1,0 +1,30 @@
+{
+    "type" : "story",
+    "map" : "map_shop",
+    "events" : {
+        "c1" : {
+            "type" : "confirm",
+            "message" : {
+                "en" : "OK?",
+                "ja" : "やってくれるな？"
+            },
+            "yes" : "c1y",
+            "no" : "c1n"
+        },
+        "c1y" : {
+            "type" : "message",
+            "message" : {
+                "en" : "Thank you!",
+                "ja" : "おぉ、やってくれるか！では頼んだぞ。"
+            },
+            "next" : "story_confirm"
+        },
+        "c1n" : {
+            "type" : "message",
+            "message" : {
+                "en" : "…",
+                "ja" : "…。"
+            },
+        }
+    }
+}

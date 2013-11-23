@@ -9,6 +9,7 @@
 #import "SJStoryScene.h"
 
 #import "SJComponents.h"
+#import <BlocksKit/BlocksKit.h>
 
 typedef enum : uint8_t {
     SJStorySceneStateWalk = 0,
@@ -93,17 +94,40 @@ typedef enum : uint8_t {
         if ((secondBody.categoryBitMask & characterCategory) != 0) {
             SJCharacterNode *node = (SJCharacterNode *)secondBody.node;
             NSString *name = node.name;
-            NSDictionary *event = self.sceneData[@"events"][name];
-            if ([event[@"type"] isEqualToString:@"message"]) {
-                _state = SJStorySceneStateMessage;
-                [self messageNode].message = event[@"message"][[SJUtilities lang]];
-                [self messageNode].hidden = NO;
-                self.nextScene = event[@"next"];
-
-                [[self playerNode] removeAllActions];
-            }
-            
+            [self processEvent:name];
         }
     }
 }
+
+- (void)processEvent:(NSString *)name {
+    
+    NSDictionary *event = self.sceneData[@"events"][name];
+
+    if (event) {
+        [[self playerNode] removeAllActions];
+    }
+
+    if ([event[@"type"] isEqualToString:@"message"]) {
+        _state = SJStorySceneStateMessage;
+        [self messageNode].message = event[@"message"][[SJUtilities lang]];
+        [self messageNode].hidden = NO;
+        self.nextScene = event[@"next"];
+        
+    } else if ([event[@"type"] isEqualToString:@"confirm"]) {
+        
+        NSString *message = event[@"message"][[SJUtilities lang]];
+        
+        UIAlertView *alertView = [UIAlertView alertViewWithTitle:nil message:message];
+        [alertView addButtonWithTitle:NSLocalizedString(@"Yes", nil) handler:^{
+            [self processEvent:event[@"yes"]];
+        }];
+        [alertView addButtonWithTitle:NSLocalizedString(@"No", nil) handler:^{
+            [self processEvent:event[@"no"]];
+        }];
+        [alertView show];
+        
+    }
+    
+}
+
 @end
