@@ -36,7 +36,18 @@
         "right_row" : 0,
         "left_row" : 0,
         "size": 32
-    }
+    },
+    "c3" : {
+        "name" : "clotharmor",
+        "stop_row" : 0,
+        "stop_cols" : 1,
+        "walk_row" : 0,
+        "walk_cols" : 1,
+        "up_row" : 0,
+        "right_row" : 0,
+        "left_row" : 0,
+        "size": 64
+    },
 }
  
 

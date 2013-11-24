@@ -18,4 +18,6 @@ extern const uint32_t characterCategory;
 
 - (id)initWithMapNamed:(NSString *)name;
 
+- (void)replaceCharacterNodeFrom:(NSString *)fromName to:(NSString *)toName;
+
 @end

@@ -57,8 +57,8 @@ typedef enum : uint8_t {
     }
 }
 
-- (SKNode *)mapNode {
-    return [self childNodeWithName:kMapName];
+- (SJMapNode *)mapNode {
+    return (SJMapNode *)[self childNodeWithName:kMapName];
 }
 
 - (SJMessageNode *)messageNode {
@@ -143,6 +143,9 @@ typedef enum : uint8_t {
         }];
         [alertView show];
         
+    } else if ([event[@"type"] isEqualToString:@"replace"]) {
+        [[self mapNode] replaceCharacterNodeFrom:event[@"from"] to:event[@"to"]];
+        [self processEvent:event[@"next"]];
     }
     
 }

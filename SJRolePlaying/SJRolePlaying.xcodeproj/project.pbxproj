@@ -23,6 +23,8 @@
 		9B2AAFB4184074C800CDA9F5 /* SJConfirmScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AAFB3184074C800CDA9F5 /* SJConfirmScene.m */; };
 		9B2AAFB61840CF7B00CDA9F5 /* story_prompt.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B2AAFB51840CF7B00CDA9F5 /* story_prompt.json */; };
 		9B2AAFB91840D08500CDA9F5 /* SJPromptScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AAFB81840D08500CDA9F5 /* SJPromptScene.m */; };
+		9B2AAFBB18422B7B00CDA9F5 /* story_replace.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B2AAFBA18422B7B00CDA9F5 /* story_replace.json */; };
+		9B2AAFBE18422CF800CDA9F5 /* SJReplaceScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AAFBD18422CF800CDA9F5 /* SJReplaceScene.m */; };
 		9B3F1FF51834FEF000B5720F /* SJTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF41834FEF000B5720F /* SJTitleScene.m */; };
 		9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF7183501C300B5720F /* SJTapNode.m */; };
 		9B3F1FFB18364C7700B5720F /* SJSettingsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FFA18364C7700B5720F /* SJSettingsScene.m */; };
@@ -80,6 +82,9 @@
 		9B2AAFB51840CF7B00CDA9F5 /* story_prompt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story_prompt.json; sourceTree = "<group>"; };
 		9B2AAFB71840D08500CDA9F5 /* SJPromptScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPromptScene.h; sourceTree = "<group>"; };
 		9B2AAFB81840D08500CDA9F5 /* SJPromptScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPromptScene.m; sourceTree = "<group>"; };
+		9B2AAFBA18422B7B00CDA9F5 /* story_replace.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story_replace.json; sourceTree = "<group>"; };
+		9B2AAFBC18422CF800CDA9F5 /* SJReplaceScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJReplaceScene.h; sourceTree = "<group>"; };
+		9B2AAFBD18422CF800CDA9F5 /* SJReplaceScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJReplaceScene.m; sourceTree = "<group>"; };
 		9B3F1FF31834FEF000B5720F /* SJTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTitleScene.h; sourceTree = "<group>"; };
 		9B3F1FF41834FEF000B5720F /* SJTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTitleScene.m; sourceTree = "<group>"; };
 		9B3F1FF6183501C300B5720F /* SJTapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTapNode.h; sourceTree = "<group>"; };
@@ -180,6 +185,7 @@
 				9B19EB73182A7D2B0002A47D /* story_opening.json */,
 				9B2AAFB01840732300CDA9F5 /* story_confirm.json */,
 				9B2AAFB51840CF7B00CDA9F5 /* story_prompt.json */,
+				9B2AAFBA18422B7B00CDA9F5 /* story_replace.json */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -301,6 +307,8 @@
 				9B2AAFB3184074C800CDA9F5 /* SJConfirmScene.m */,
 				9B2AAFB71840D08500CDA9F5 /* SJPromptScene.h */,
 				9B2AAFB81840D08500CDA9F5 /* SJPromptScene.m */,
+				9B2AAFBC18422CF800CDA9F5 /* SJReplaceScene.h */,
+				9B2AAFBD18422CF800CDA9F5 /* SJReplaceScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -423,6 +431,7 @@
 				9B19EB58181AA1530002A47D /* map_shop.csv in Resources */,
 				9B19EB5F181AA1A60002A47D /* chest.png in Resources */,
 				9B19EB62181AA1A60002A47D /* tilesheet.png in Resources */,
+				9B2AAFBB18422B7B00CDA9F5 /* story_replace.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +497,7 @@
 				9B7A1DF2180EB8F200F7460A /* SJAppDelegate.m in Sources */,
 				9B19EB7A182A81200002A47D /* SJStoryScene.m in Sources */,
 				9B19EB6C1822936E0002A47D /* SJMessageNode.m in Sources */,
+				9B2AAFBE18422CF800CDA9F5 /* SJReplaceScene.m in Sources */,
 				9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */,
 				9B3F1FFB18364C7700B5720F /* SJSettingsScene.m in Sources */,
 				9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */,

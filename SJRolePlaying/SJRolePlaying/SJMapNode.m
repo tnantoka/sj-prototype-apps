@@ -77,23 +77,7 @@ const uint32_t characterCategory = 0x1 << 1;
                     tileSprite.physicsBody.dynamic = NO;
                     
                 } else if ([col hasPrefix:@"c"]) {
-                    tileSprite = [[SJCharacterNode alloc] initWithCharacterNamed:col];
-
-                    tileSprite.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(TILE_SIZE, TILE_SIZE)];
-                    tileSprite.physicsBody.affectedByGravity = NO;
-                    tileSprite.physicsBody.allowsRotation = NO;
-                    
-                    if ([col isEqualToString:kPlayerName]) {
-                        tileSprite.physicsBody.categoryBitMask = playerCategory;
-                        tileSprite.physicsBody.contactTestBitMask = characterCategory;
-                    } else {
-                        tileSprite.physicsBody.categoryBitMask = characterCategory;
-                        tileSprite.physicsBody.contactTestBitMask = playerCategory;
-                        tileSprite.physicsBody.dynamic = NO;
-                    }
-
-                    tileSprite.name = col;
-
+                    tileSprite = [self newCharacterNode:col];
                 } else {
                     NSInteger index = [col integerValue];
                     
@@ -123,5 +107,37 @@ const uint32_t characterCategory = 0x1 << 1;
 #endif
     
 }
+
+- (void)replaceCharacterNodeFrom:(NSString *)fromName to:(NSString *)toName {
+    
+    SKNode *fromNode = [self childNodeWithName:fromName];
+    SKNode *toNode = [self newCharacterNode:toName];
+    
+    toNode.position = fromNode.position;
+    
+    [fromNode removeFromParent];
+    [self addChild:toNode];
+}
+
+- (SKNode *)newCharacterNode:(NSString *)name {
+    SKNode *tileSprite = [[SJCharacterNode alloc] initWithCharacterNamed:name];
+    
+    tileSprite.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(TILE_SIZE, TILE_SIZE)];
+    tileSprite.physicsBody.affectedByGravity = NO;
+    tileSprite.physicsBody.allowsRotation = NO;
+    
+    if ([name isEqualToString:kPlayerName]) {
+        tileSprite.physicsBody.categoryBitMask = playerCategory;
+        tileSprite.physicsBody.contactTestBitMask = characterCategory;
+    } else {
+        tileSprite.physicsBody.categoryBitMask = characterCategory;
+        tileSprite.physicsBody.contactTestBitMask = playerCategory;
+        tileSprite.physicsBody.dynamic = NO;
+    }
+    
+    tileSprite.name = name;
+    return tileSprite;
+}
+
 
 @end

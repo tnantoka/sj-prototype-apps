@@ -1,0 +1,28 @@
+{
+    "type" : "story",
+    "map" : "map_shop",
+    "events" : {
+        "c1" : {
+            "type" : "message",
+            "message" : {
+                "en" : "Here you are!",
+                "ja" : "これじゃ！"
+            },
+            "next" : "c1a"
+        },
+        "c1a" : {
+            "type" : "replace",
+            "from" : "c2",
+            "to" : "c3",
+            "next" : "c1b"
+        },
+        "c1b" : {
+            "type" : "message",
+            "message" : {
+                "en" : "Take good care of it.",
+                "ja" : "お主の分身じゃ。大切にするんじゃぞ。"
+            },
+            "next" : "story_replace"
+        }
+    }
+}
