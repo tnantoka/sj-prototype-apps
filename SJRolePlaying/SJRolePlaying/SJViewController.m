@@ -31,6 +31,7 @@
                     @"Title",
                     @"Settings",
                     @"Confirm",
+                    @"Prompt",
                     ];
     }
     return self;

@@ -56,13 +56,15 @@
 - (void)registerDefaults {
     NSMutableDictionary *defaults = @{}.mutableCopy;
     
-    //NSString *lang = [[NSLocale preferredLanguages][0] isEqualToString:@"ja"] ? @"ja" : @"en";
-    NSString *lang = @"ja";
+    NSString *lang = [[NSLocale preferredLanguages][0] isEqualToString:@"ja"] ? @"ja" : @"en";
+    //NSString *lang = @"ja";
     defaults[kLangKey] = lang;
-
     defaults[kSoundKey] = @NO;
+
+    defaults[@"username"] = @"主人公";
 
     [[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
 }
 
 @end
+

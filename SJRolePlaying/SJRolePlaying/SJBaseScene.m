@@ -51,8 +51,10 @@ static const CGFloat SCENE_DURATION = 0.6f;
     } else if ([name hasPrefix:@"title"]) {
         scene = [[SJTitleScene alloc] initWithSize:self.size name:name];
     }
-    SKTransition *transition = [SKTransition fadeWithDuration:SCENE_DURATION];
-    [self.view presentScene:scene transition:transition];
+    if (scene) {
+        SKTransition *transition = [SKTransition fadeWithDuration:SCENE_DURATION];
+        [self.view presentScene:scene transition:transition];        
+    }
 }
 
 - (void)loadNextScene {

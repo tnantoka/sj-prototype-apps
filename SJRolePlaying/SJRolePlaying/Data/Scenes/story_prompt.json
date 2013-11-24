@@ -1,0 +1,31 @@
+{
+    "type" : "story",
+    "map" : "map_shop",
+    "events" : {
+        "c1" : {
+            "type" : "message",
+            "message" : {
+                "en" : "Hi,",
+                "ja" : "やあ。"
+            },
+            "next" : "c1c"
+        },
+        "c1c" : {
+            "type" : "prompt",
+            "message" : {
+                "en" : "What is your name?",
+                "ja" : "君の名前は？"
+            },
+            "key" : "username",
+            "next" : "c1a"
+        },
+        "c1a" : {
+            "type" : "message",
+            "message" : {
+                "en" : "<username>...OK, Welcome <username>!",
+                "ja" : "<username>か、いい名前だ。よろしく、<username>！"
+            },
+            "next" : "story_prompt"
+        }
+    }
+}

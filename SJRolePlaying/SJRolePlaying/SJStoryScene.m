@@ -51,6 +51,7 @@ typedef enum : uint8_t {
                 [self messageNode].hidden = YES;
                 _state = SJStorySceneStateWalk;
                 [self loadNextScene];
+                [self processEvent:self.nextScene];
             }
             break;
     }
@@ -109,7 +110,9 @@ typedef enum : uint8_t {
 
     if ([event[@"type"] isEqualToString:@"message"]) {
         _state = SJStorySceneStateMessage;
-        [self messageNode].message = event[@"message"][[SJUtilities lang]];
+        
+        NSString *message = [self replaceKeys:event[@"message"][[SJUtilities lang]]];
+        [self messageNode].message = message;
         [self messageNode].hidden = NO;
         self.nextScene = event[@"next"];
         
@@ -126,8 +129,44 @@ typedef enum : uint8_t {
         }];
         [alertView show];
         
+    } else if ([event[@"type"] isEqualToString:@"prompt"]) {
+        
+        NSString *message = event[@"message"][[SJUtilities lang]];
+        
+        __weak UIAlertView *alertView = [UIAlertView alertViewWithTitle:nil message:message];
+        alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [alertView addButtonWithTitle:NSLocalizedString(@"OK", nil) handler:^{
+            NSString *text = [alertView textFieldAtIndex:0].text;
+            NSString *key = event[@"key"];
+            [[NSUserDefaults standardUserDefaults] setObject:text forKey:key];
+            [self processEvent:event[@"next"]];
+        }];
+        [alertView show];
+        
     }
     
+}
+
+- (NSString *)replaceKeys:(NSString *)message {
+ 
+    NSMutableString *replaced = message.mutableCopy;
+    NSError *error = nil;
+    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:@"<([^>]+)>" options:0 error:&error];
+    if (error) {
+        NSLog(@"%@", error.localizedDescription);
+    }
+    
+    NSMutableArray *keys = @[].mutableCopy;
+    [regexp enumerateMatchesInString:message options:0 range:NSMakeRange(0, message.length) usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+        NSString *key = [message substringWithRange:[result rangeAtIndex:1]];
+        [keys addObject:key];
+    }];
+    
+    for (NSString *key in keys) {
+        [replaced replaceOccurrencesOfString:[NSString stringWithFormat:@"<%@>", key] withString:[[NSUserDefaults standardUserDefaults] stringForKey:key] options:0 range:NSMakeRange(0, replaced.length)];
+    }
+    
+    return replaced;
 }
 
 @end

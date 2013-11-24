@@ -21,6 +21,8 @@
 		9B19EB7A182A81200002A47D /* SJStoryScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19EB79182A81200002A47D /* SJStoryScene.m */; };
 		9B2AAFB11840732300CDA9F5 /* story_confirm.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B2AAFB01840732300CDA9F5 /* story_confirm.json */; };
 		9B2AAFB4184074C800CDA9F5 /* SJConfirmScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AAFB3184074C800CDA9F5 /* SJConfirmScene.m */; };
+		9B2AAFB61840CF7B00CDA9F5 /* story_prompt.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B2AAFB51840CF7B00CDA9F5 /* story_prompt.json */; };
+		9B2AAFB91840D08500CDA9F5 /* SJPromptScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AAFB81840D08500CDA9F5 /* SJPromptScene.m */; };
 		9B3F1FF51834FEF000B5720F /* SJTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF41834FEF000B5720F /* SJTitleScene.m */; };
 		9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FF7183501C300B5720F /* SJTapNode.m */; };
 		9B3F1FFB18364C7700B5720F /* SJSettingsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F1FFA18364C7700B5720F /* SJSettingsScene.m */; };
@@ -75,6 +77,9 @@
 		9B2AAFB01840732300CDA9F5 /* story_confirm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story_confirm.json; sourceTree = "<group>"; };
 		9B2AAFB2184074C800CDA9F5 /* SJConfirmScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJConfirmScene.h; sourceTree = "<group>"; };
 		9B2AAFB3184074C800CDA9F5 /* SJConfirmScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJConfirmScene.m; sourceTree = "<group>"; };
+		9B2AAFB51840CF7B00CDA9F5 /* story_prompt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story_prompt.json; sourceTree = "<group>"; };
+		9B2AAFB71840D08500CDA9F5 /* SJPromptScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPromptScene.h; sourceTree = "<group>"; };
+		9B2AAFB81840D08500CDA9F5 /* SJPromptScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPromptScene.m; sourceTree = "<group>"; };
 		9B3F1FF31834FEF000B5720F /* SJTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTitleScene.h; sourceTree = "<group>"; };
 		9B3F1FF41834FEF000B5720F /* SJTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTitleScene.m; sourceTree = "<group>"; };
 		9B3F1FF6183501C300B5720F /* SJTapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTapNode.h; sourceTree = "<group>"; };
@@ -174,6 +179,7 @@
 			children = (
 				9B19EB73182A7D2B0002A47D /* story_opening.json */,
 				9B2AAFB01840732300CDA9F5 /* story_confirm.json */,
+				9B2AAFB51840CF7B00CDA9F5 /* story_prompt.json */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -293,6 +299,8 @@
 				9B3F1FFA18364C7700B5720F /* SJSettingsScene.m */,
 				9B2AAFB2184074C800CDA9F5 /* SJConfirmScene.h */,
 				9B2AAFB3184074C800CDA9F5 /* SJConfirmScene.m */,
+				9B2AAFB71840D08500CDA9F5 /* SJPromptScene.h */,
+				9B2AAFB81840D08500CDA9F5 /* SJPromptScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -405,6 +413,7 @@
 			files = (
 				9B2AAFB11840732300CDA9F5 /* story_confirm.json in Resources */,
 				9B19EB61181AA1A60002A47D /* scientist.png in Resources */,
+				9B2AAFB61840CF7B00CDA9F5 /* story_prompt.json in Resources */,
 				9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */,
 				9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */,
 				9B19EB66181AA8BE0002A47D /* characters.json in Resources */,
@@ -467,6 +476,7 @@
 			files = (
 				9B3F1FF51834FEF000B5720F /* SJTitleScene.m in Sources */,
 				9B7A1E60180EC06300F7460A /* SJSceneViewController.m in Sources */,
+				9B2AAFB91840D08500CDA9F5 /* SJPromptScene.m in Sources */,
 				9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */,
 				9B7A1E63180EC0C800F7460A /* SJShopScene.m in Sources */,
 				9B2AAFB4184074C800CDA9F5 /* SJConfirmScene.m in Sources */,
