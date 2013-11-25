@@ -33,6 +33,7 @@
                     @"Confirm",
                     @"Prompt",
                     @"Replace",
+                    @"Chapter1",
                     ];
     }
     return self;

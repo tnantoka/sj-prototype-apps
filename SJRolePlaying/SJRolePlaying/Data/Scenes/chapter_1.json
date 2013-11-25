@@ -1,0 +1,12 @@
+{
+    "type" : "chapter",
+    "title" : {
+        "en" : "CHAPTER 1",
+        "ja" : "第一章"
+    },
+    "subtitle" : {
+        "en" : "THE MANIPULATOR & THE SUBSERVIENT",
+        "ja" : "利用する者されるもの者"
+    },
+    "next" : "story_opening"
+}
