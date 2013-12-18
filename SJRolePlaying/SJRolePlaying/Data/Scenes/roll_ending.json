@@ -1,0 +1,35 @@
+{
+    "type" : "roll",
+    "roll" : [
+              {
+              "text" : "Prototype Quest",
+              "size" : 24.0
+              },
+              {
+              "text" : "Staff",
+              "size" : 20.0
+              },
+              {
+              "text" : "tnantoka",
+              "size" : 20.0
+              },
+              {
+              "text" : "Special Thanks",
+              "size" : 24.0
+              },
+              {
+              "text" : "Browser Quest",
+              "size" : 20.0
+              },
+              {
+              "text" : "mosamosa font",
+              "size" : 20.0
+              },
+              {
+              "text" : "Fin",
+              "size" : 28.0
+              }
+              ],
+    "speed" : 4.0,
+    "next" : "title"
+}

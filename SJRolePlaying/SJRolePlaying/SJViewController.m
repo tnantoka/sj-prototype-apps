@@ -34,6 +34,7 @@
                     @"Prompt",
                     @"Replace",
                     @"Chapter1",
+                    @"Ending",
                     ];
     }
     return self;

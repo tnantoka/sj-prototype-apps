@@ -51,6 +51,9 @@
 		9B7A1ED31814230300F7460A /* SJMapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED21814230300F7460A /* SJMapNode.m */; };
 		9B7A1ED818155B8700F7460A /* SJCharacterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1ED718155B8700F7460A /* SJCharacterNode.m */; };
 		9B7A1EDB181563AC00F7460A /* SJUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A1EDA181563AC00F7460A /* SJUtilities.m */; };
+		9B99E7431860838C00151D37 /* roll_ending.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B99E7421860838C00151D37 /* roll_ending.json */; };
+		9B99E7461860847A00151D37 /* SJRollScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B99E7451860847A00151D37 /* SJRollScene.m */; };
+		9B99E7491860853000151D37 /* SJEndingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B99E7481860853000151D37 /* SJEndingScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +134,11 @@
 		9B7A1ED9181563AC00F7460A /* SJUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJUtilities.h; sourceTree = "<group>"; };
 		9B7A1EDA181563AC00F7460A /* SJUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJUtilities.m; sourceTree = "<group>"; };
 		9B7A1EDD1815643400F7460A /* SJComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJComponents.h; sourceTree = "<group>"; };
+		9B99E7421860838C00151D37 /* roll_ending.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roll_ending.json; sourceTree = "<group>"; };
+		9B99E7441860847A00151D37 /* SJRollScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJRollScene.h; sourceTree = "<group>"; };
+		9B99E7451860847A00151D37 /* SJRollScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJRollScene.m; sourceTree = "<group>"; };
+		9B99E7471860853000151D37 /* SJEndingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJEndingScene.h; sourceTree = "<group>"; };
+		9B99E7481860853000151D37 /* SJEndingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJEndingScene.m; sourceTree = "<group>"; };
 		E648AD4679FD45ECA860A3BF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +203,7 @@
 				9B2AAFB51840CF7B00CDA9F5 /* story_prompt.json */,
 				9B2AAFBA18422B7B00CDA9F5 /* story_replace.json */,
 				9B2AAFC31842481900CDA9F5 /* chapter_1.json */,
+				9B99E7421860838C00151D37 /* roll_ending.json */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -212,6 +221,8 @@
 				9B2AAFBD18422CF800CDA9F5 /* SJReplaceScene.m */,
 				9B2AAFC51842482B00CDA9F5 /* SJChapter1Scene.h */,
 				9B2AAFC61842482B00CDA9F5 /* SJChapter1Scene.m */,
+				9B99E7471860853000151D37 /* SJEndingScene.h */,
+				9B99E7481860853000151D37 /* SJEndingScene.m */,
 			);
 			name = Loader;
 			sourceTree = "<group>";
@@ -329,6 +340,8 @@
 				9B3F1FFA18364C7700B5720F /* SJSettingsScene.m */,
 				9B2AAFC0184247B700CDA9F5 /* SJChapterScene.h */,
 				9B2AAFC1184247B700CDA9F5 /* SJChapterScene.m */,
+				9B99E7441860847A00151D37 /* SJRollScene.h */,
+				9B99E7451860847A00151D37 /* SJRollScene.m */,
 				9B2AAFBF1842472200CDA9F5 /* Loader */,
 			);
 			name = Scenes;
@@ -442,6 +455,7 @@
 			files = (
 				9B2AAFB11840732300CDA9F5 /* story_confirm.json in Resources */,
 				9B19EB61181AA1A60002A47D /* scientist.png in Resources */,
+				9B99E7431860838C00151D37 /* roll_ending.json in Resources */,
 				9B2AAFB61840CF7B00CDA9F5 /* story_prompt.json in Resources */,
 				9B19EB60181AA1A60002A47D /* clotharmor.png in Resources */,
 				9B7A1DEC180EB8F200F7460A /* InfoPlist.strings in Resources */,
@@ -523,7 +537,9 @@
 				9B2AAFC71842482B00CDA9F5 /* SJChapter1Scene.m in Sources */,
 				9B2AAFBE18422CF800CDA9F5 /* SJReplaceScene.m in Sources */,
 				9B3F1FF8183501C300B5720F /* SJTapNode.m in Sources */,
+				9B99E7461860847A00151D37 /* SJRollScene.m in Sources */,
 				9B3F1FFB18364C7700B5720F /* SJSettingsScene.m in Sources */,
+				9B99E7491860853000151D37 /* SJEndingScene.m in Sources */,
 				9B7A1EC8180EECA100F7460A /* SJTilesheetScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

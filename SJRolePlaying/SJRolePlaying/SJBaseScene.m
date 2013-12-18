@@ -12,6 +12,7 @@
 #import "SJSettingsScene.h"
 #import "SJTitleScene.h"
 #import "SJChapterScene.h"
+#import "SJRollScene.h"
 
 static const CGFloat SCENE_DURATION = 0.6f;
 
@@ -53,6 +54,8 @@ static const CGFloat SCENE_DURATION = 0.6f;
         scene = [[SJTitleScene alloc] initWithSize:self.size name:name];
     } else if ([name hasPrefix:@"chapter"]) {
         scene = [[SJChapterScene alloc] initWithSize:self.size name:name];
+    } else if ([name hasPrefix:@"roll"]) {
+        scene = [[SJRollScene alloc] initWithSize:self.size name:name];
     }
     if (scene) {
         SKTransition *transition = [SKTransition fadeWithDuration:SCENE_DURATION];
